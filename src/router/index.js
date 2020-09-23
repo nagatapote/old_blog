@@ -1,10 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import BootstrapVue from 'bootstrap-vue'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import article1 from '../views/article/20200922.vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.use(VueRouter)
+Vue.use(BootstrapVue)
 
 const routes = [
   {

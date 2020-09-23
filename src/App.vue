@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="all">
 <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <div id="nav">
 <h1>pote's blog</h1>
@@ -20,6 +20,11 @@
 </template>
 
 <style>
+#all {
+    text-align: center;
+    margin-left:20px;
+    margin-right:20px;
+}
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -32,6 +37,7 @@
 #nav {
   padding: 10px;
   border-bottom: 5px solid #ccc;
+  text-align: left;
 }
 
 #nav h1 {
