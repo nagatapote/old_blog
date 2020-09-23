@@ -1,10 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import VueAdsense from 'vue-adsense'
+import Ads from 'vue-google-adsense'
 
-// Google Adsense 用
-Vue.component('adsense', VueAdsense)
+/* アドセンスの使用宣言 */
+Vue.use(require('vue-script2'))
+Vue.use(Ads.Adsense)
+Vue.use(Ads.InArticleAdsense)
+Vue.use(Ads.InFeedAdsense)
 
 Vue.config.productionTip = false
 
