@@ -60,7 +60,7 @@
       color="indigo"
       app
     >
-      <span class="white--text">&copy; {{ new Date().getFullYear() }} pote's blog</span>
+      <span class="white--text">&copy; 2020 pote's blog</span>
     </v-footer>
   </v-app>
 </template>
