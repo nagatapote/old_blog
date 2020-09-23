@@ -1,65 +1,84 @@
 <template>
-<div id="all">
-<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <div id="nav">
-<h1>pote's blog</h1>
-    <a><router-link to="/">TOP</router-link></a> |
-    <a><router-link to="/about">PROFILE</router-link></a> |
-    <a href="https://github.com/nagatapote"><i class="fab fa-github"></i></a> |
-    <a href="https://twitter.com/pote_nagata"><i class="fab fa-twitter"></i></a>
-  </div>
-    <router-view/>
-  <footer>
-   <div id="nav_c">
-    </div>
-    <div id="nav_u">
-      <p>© 2020 pote's blog</p>
-    </div>
-    </footer>
-</div>
+  <v-app id="inspire">
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+    >
+      <v-list dense>
+        <v-list-item to="/">
+          <v-list-item-action>
+            <v-icon>mdi-home</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Home</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item to="/about">
+          <v-list-item-action>
+            <v-icon>mdi-account</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Profile</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item href="https://twitter.com/pote_nagata">
+          <v-list-item-action>
+            <v-icon>mdi-twitter</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Twitter</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item href="https://github.com/nagatapote">
+          <v-list-item-action>
+            <v-icon>mdi-github</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Github</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-app-bar
+      app
+      color="indigo"
+      dark
+    >
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title>pote's blog</v-toolbar-title>
+    </v-app-bar>
+
+    <v-main>
+      <v-container>
+        </v-container>
+        <v-row>
+          </v-row>
+      <router-view/>
+    </v-main>
+    <v-footer
+      color="indigo"
+      app
+    >
+      <span class="white--text">&copy; {{ new Date().getFullYear() }} pote's blog</span>
+    </v-footer>
+  </v-app>
 </template>
 
+<script>
+export default {
+  props: {
+    source: String
+  },
+  data: () => ({
+    drawer: null
+  })
+}
+</script>
+
 <style>
-#all {
-    text-align: center;
-    margin-left:20px;
-    margin-right:20px;
-}
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: left;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 10px;
-  border-bottom: 5px solid #ccc;
-  text-align: left;
-}
-
-#nav h1 {
-  background-color: #2c3e50;
-  color: #FFFFFF;
-  line-height: 3;
-  text-align: center;
-}
-
-#nav_u p {
-  background-color: #2c3e50;
-  color: #FFFFFF;
-  line-height: 3;
-  text-align: center;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  #inspire {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 </style>
