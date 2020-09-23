@@ -1,5 +1,6 @@
 <template>
     <div class="20200922" id="article1">
+        <b-container class="justifiy-content-center">
         <h2>vue.jsとnetlifyでblog作成</h2>
         <h3>■目的</h3>
         <p>技術ブログ作成し、やったことを残しておくため</p>
@@ -18,9 +19,9 @@
         <p>「Repository name」に好きな名前を入れて、「Create repository」をクリックすれば完了です。</p>
         <h4>▼公開鍵・秘密鍵の作成</h4>
         <b>鍵を入れるフォルダへ移動</b>
-        <p>$ cd ~/.ssh</p>
+        <p><kbd>$ cd ~/.ssh</kbd></p>
         <b>鍵を生成</b>
-        <p>$ ssh-keygen -t rsa (質問されるが、全てEnter)</p>
+        <p><kbd>$ ssh-keygen -t rsa</kbd> (質問されるが、全てEnter)</p>
         <h4>▼公開鍵をGitHubにアップ</h4>
         <a href="https://github.com/settings/ssh">https://github.com/settings/ssh</a><br>
         <p>上記ページで公開鍵の設定が可能。（GitHubに登録してある必要があります。）</p>
@@ -29,27 +30,27 @@
         <img id="img" src="../../assets/20200922/addnew.png">
         <p>「title」に自分の好きな名前</p>
         <p>「key」には以下のコマンドでコピーしたものを貼り付ける</p>
-        <p>$ pbcopy &lt; ~/.ssh/id_rsa.pub</p>
+        <p><kbd>$ pbcopy &lt; ~/.ssh/id_rsa.pub</kbd></p>
         <b>接続確認</b>
-        <p>$ ssh -T git@github.com</p>
+        <p><kbd>$ ssh -T git@github.com</kbd></p>
         <p>以下のように表示されたら接続完了</p>
         <p>You've successfully authenticated, but GitHub does not provide shell access.</p>
 
         <h4>▼githubへpushする方法</h4>
         <b>作業ディレクトリをgithubで管理するためのコマンド</b>
-        <p>$ git init</p>
+        <p><kbd>$ git init</kbd></p>
         <b>作業ディレクトリ→ステージングエリア</b>
-        <p>$ git add ファイル名</p>
-        <p>$ git add -A (作業ツリー内全て)</p>
+        <p><kbd>$ git add ファイル名</kbd></p>
+        <p><kbd>$ git add -A</kbd> (作業ツリー内全て)</p>
         <b>ステージングエリア→ローカルリポジトリ</b>
-        <p>$ git commit -m "コミットメッセージ"</p>
+        <p><kbd>$ git commit -m "コミットメッセージ"</kbd></p>
         <b>ローカルリポジトリ→リモートリポジトリ</b>
-        <p>$ git push</p>
+        <p><kbd>$ git push</kbd></p>
         <p>※初めてリモートリポジトリにpushする場合は、以下のコマンド</p>
-        <p>$ git remote add origin git@github.com:[githubID]]/[リポジトリ名]</p>
+        <p><kbd>$ git remote add origin git@github.com:[githubID]]/[リポジトリ名]</kbd></p>
         <p>以下の「Code」で確認可能</p>
         <img id="img" src="../../assets/20200922/githubCode.png">
-        <p>$ git push -u origin master</p>
+        <p><kbd>$ git push -u origin master</kbd></p>
         <h3>■githubとnetlifyの連携</h3>
         <p>netlifyとググって、githubでログイン</p>
         <img id="img" src="../../assets/20200922/NewSiteFromGit.png">
@@ -65,13 +66,11 @@
         <img id="img" src="../../assets/20200922/Deploy.png">
         <p>※上記画像は、名前.comでドメインを取得し、設定済みです</p>
         <p>以上</p>
+        </b-container>
     </div>
 </template>
 
 <style>
- #article1{
-     text-align: left;
- }
 
  #img {
     max-width: 100%;
