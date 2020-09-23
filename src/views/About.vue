@@ -18,7 +18,7 @@
           outlined
           tile
         >
-          名前
+          名前<br>Name
         </v-card>
       </v-col>
       <v-col md="2">
@@ -27,7 +27,7 @@
           outlined
           tile
         >
-          永田浩晃(Hiroaki Nagata)
+          永田浩晃<br>Hiroaki Nagata
         </v-card>
       </v-col>
     </v-row>
@@ -42,7 +42,7 @@
           outlined
           tile
         >
-          あだ名
+          あだ名<br>Nickname
         </v-card>
       </v-col>
       <v-col md="2">
@@ -51,7 +51,7 @@
           outlined
           tile
         >
-          ぽて(pote)
+          ぽて<br>pote
         </v-card>
       </v-col>
     </v-row>
