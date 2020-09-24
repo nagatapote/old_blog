@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import BootstrapVue from 'bootstrap-vue'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
+import Markdown from '../views/Markdown.vue'
 import article1 from '../views/article/20200922.vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -20,6 +21,11 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About
+  },
+  {
+    path: '/Markdown',
+    name: 'Markdown',
+    component: Markdown
   },
   {
     path: '/article1',

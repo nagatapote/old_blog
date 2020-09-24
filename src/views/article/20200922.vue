@@ -1,79 +1,15 @@
 <template>
-    <div class="20200922" id="article1">
+<div class="20200922" id="article1">
         <b-container class="justifiy-content-center">
-        <h2>vue.jsとnetlifyでblog作成</h2>
-        <h3>■目的</h3>
-        <p>技術ブログ作成し、やったことを残しておくため</p>
-        <h3>■使ったもの</h3>
-        <p>PC：MacBookPro 13インチ メモリ8GB</p>
-        <p>エディタ：Visual Studio Code(ターミナルも使えて便利)</p>
-        <h3>■やったこと</h3>
-        <p>・vue.jsとgithubの連携</p>
-        <p>・githubとnetlifyの連携</p>
-        <h3>■vue.jsとgithubの連携</h3>
-        <h4>▼githubの登録、リポジトリの作成</h4>
-        <p>githubとググって、登録</p>
-        <img id="img" src="../../assets/20200922/NewRepositories.png">
-        <p>ログイン後、左上の「New」をクリック</p>
-        <img id="img" src="../../assets/20200922/CreateRepositories.png">
-        <p>「Repository name」に好きな名前を入れて、「Create repository」をクリックすれば完了です。</p>
-        <h4>▼公開鍵・秘密鍵の作成</h4>
-        <b>鍵を入れるフォルダへ移動</b>
-        <p><kbd>$ cd ~/.ssh</kbd></p>
-        <b>鍵を生成</b>
-        <p><kbd>$ ssh-keygen -t rsa</kbd> (質問されるが、全てEnter)</p>
-        <h4>▼公開鍵をGitHubにアップ</h4>
-        <a href="https://github.com/settings/ssh">https://github.com/settings/ssh</a><br>
-        <p>上記ページで公開鍵の設定が可能。（GitHubに登録してある必要があります。）</p>
-        <img id="img" src="../../assets/20200922/SSHkey.png">
-        <p>右上の「New SSH key」をクリック</p>
-        <img id="img" src="../../assets/20200922/addnew.png">
-        <p>「title」に自分の好きな名前</p>
-        <p>「key」には以下のコマンドでコピーしたものを貼り付ける</p>
-        <p><kbd>$ pbcopy &lt; ~/.ssh/id_rsa.pub</kbd></p>
-        <b>接続確認</b>
-        <p><kbd>$ ssh -T git@github.com</kbd></p>
-        <p>以下のように表示されたら接続完了</p>
-        <p>You've successfully authenticated, but GitHub does not provide shell access.</p>
-
-        <h4>▼githubへpushする方法</h4>
-        <b>作業ディレクトリをgithubで管理するためのコマンド</b>
-        <p><kbd>$ git init</kbd></p>
-        <b>作業ディレクトリ→ステージングエリア</b>
-        <p><kbd>$ git add ファイル名</kbd></p>
-        <p><kbd>$ git add -A</kbd> (作業ツリー内全て)</p>
-        <b>ステージングエリア→ローカルリポジトリ</b>
-        <p><kbd>$ git commit -m "コミットメッセージ"</kbd></p>
-        <b>ローカルリポジトリ→リモートリポジトリ</b>
-        <p><kbd>$ git push</kbd></p>
-        <p>※初めてリモートリポジトリにpushする場合は、以下のコマンド</p>
-        <p><kbd>$ git remote add origin git@github.com:[githubID]]/[リポジトリ名]</kbd></p>
-        <p>以下の「Code」で確認可能</p>
-        <img id="img" src="../../assets/20200922/githubCode.png">
-        <p><kbd>$ git push -u origin master</kbd></p>
-        <h3>■githubとnetlifyの連携</h3>
-        <p>netlifyとググって、githubでログイン</p>
-        <img id="img" src="../../assets/20200922/NewSiteFromGit.png">
-        <p>右上の「New site from Git」をクリック</p>
-        <img id="img" src="../../assets/20200922/CreateNewSite.png">
-        <p>左下の「GitHub」をクリック</p>
-        <p>連携したいリポジトリを選択</p>
-        <img id="img" src="../../assets/20200922/DeploySite.png">
-        <p>vue.jsの場合、上記画像のように入力し、「Deply site」をクリック</p>
-        <p>あとは、githubにpushするだけで勝手にデプロイしてくれます</p>
-        <p>初回はビルドに時間がかかります</p>
-        <p>完了すると以下のようにURLが表示されますので、クリックするとサイトが表示されます</p>
-        <img id="img" src="../../assets/20200922/Deploy.png">
-        <p>※上記画像は、名前.comでドメインを取得し、設定済みです</p>
-        <p>以上</p>
+<h1><a id="vuejsnetlifyblog_0"></a>vue.jsとnetlifyでblog作成</h1> <h2><a id="_1"></a>目的</h2> <p>技術ブログ作成し、やったことを残しておくため</p> <h2><a id="_3"></a>使ったもの</h2> <p>PC：MacBookPro 13インチ メモリ8GB<br /> エディタ：Visual Studio Code(ターミナルも使えて便利)</p> <h2><a id="_6"></a>やったこと</h2> <ul> <li>vue.jsとgithubの連携</li> <li>githubとnetlifyの連携</li> </ul> <h2><a id="vuejsgithub_9"></a>■vue.jsとgithubの連携</h2> <h3><a id="github_10"></a>▼githubの登録、リポジトリの作成</h3> <p>githubとググって、登録</p> <p><img src="../../assets/20200922/NewRepositories.png" alt="NewRepositories" /></p> <p>ログイン後、左上の「New」をクリック</p> <p><img src="../../assets/20200922/CreateRepositories.png" alt="CreateRepositories" /></p> <p>「Repository name」に好きな名前を入れて、「Create repository」をクリックすれば完了</p> <h3><a id="_20"></a>▼公開鍵・秘密鍵の作成</h3> <p><strong>鍵を入れるフォルダへ移動</strong><br /> <kbd>$ cd ~/.ssh</kbd></p> <p><strong>鍵を生成</strong><br /> <kbd>$ ssh-keygen -t rsa</kbd> (質問されるが、全てEnter)</p> <h3><a id="GitHub_26"></a>▼公開鍵をGitHubにアップ</h3> <p><a href="https://github.com/settings/ssh" target="_blank">https://github.com/settings/ssh</a></p> <p>上記ページで公開鍵の設定が可能。（GitHubに登録してある必要あり）</p> <p><img src="../../assets/20200922/SSHkey.png" alt="SSHkey" /></p> <p>右上の「New SSH key」をクリック</p> <p><img src="../../assets/20200922/addnew.png" alt="addnew" /></p> <p>「title」に自分の好きな名前<br /> 「key」には以下のコマンドでコピーしたものを貼り付ける<br /> <kbd>$ pbcopy &lt; ~/.ssh/id_rsa.pub</kbd></p> <p><strong>接続確認</strong><br /> <kbd>$ ssh -T git@github.com</kbd><br /> 以下のように表示されたら接続完了<br /> You’ve successfully authenticated, but GitHub does not provide shell access.</p> <h3><a id="githubpush_45"></a>▼githubへpushする方法</h3> <p><strong>作業ディレクトリをgithubで管理するためのコマンド</strong><br /> <kbd>$ git init</kbd></p> <p><strong>作業ディレクトリ→ステージングエリア</strong><br /> <kbd>$ git add ファイル名</kbd><br /> <kbd>$ git add -A</kbd> (作業ツリー内全て)</p> <p><strong>ステージングエリア→ローカルリポジトリ</strong><br /> <kbd>$ git commit -m “コミットメッセージ”</kbd></p> <p><strong>ローカルリポジトリ→リモートリポジトリ</strong><br /> <kbd>$ git push</kbd><br /> ※初めてリモートリポジトリにpushする場合は、以下のコマンド<br /> <kbd>$ git remote add origin git@github.com:[githubID]]/[リポジトリ名]</kbd><br /> 以下の「Code」で確認可能</p> <p><img src="../../assets/20200922/githubCode.png" alt="githubCode" /></p> <p><kbd>$ git push -u origin master</kbd></p> <h2><a id="githubnetlify_66"></a>■githubとnetlifyの連携</h2> <p>netlifyとググって、githubでログイン</p> <p><img src="../../assets/20200922/NewSiteFromGit.png" alt="NewSiteFromGit" /></p> <p>右上の「New site from Git」をクリック</p> <p><img src="../../assets/20200922/CreateNewSite.png" alt="CreateNewSite" /></p> <p>左下の「GitHub」をクリック<br /> 連携したいリポジトリを選択</p> <p><img src="../../assets/20200922/DeploySite.png" alt="DeploySite" /></p> <p>vue.jsの場合、上記画像のように入力し、「Deply site」をクリック<br /> あとは、githubにpushするだけで勝手にデプロイしてくれます<br /> 初回はビルドに時間がかかります<br /> 完了すると以下のようにURLが表示されますので、クリックするとサイトが表示されます</p> <p><img src="../../assets/20200922/Deploy.png" alt="Deploy" /></p> <p>※上記画像は、名前.comでドメインを取得し、設定済み</p> <p>以上</p>
         </b-container>
     </div>
 </template>
 
-<style>
+<style scoped>
 
- #img {
+img {
     max-width: 100%;
-    height: auto;
- }
+    border: 9px solid green;
+}
 </style>
