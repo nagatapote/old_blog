@@ -11,6 +11,7 @@
       height="200px"
       src="https://cdn.pixabay.com/photo/2016/08/11/23/48/italy-1587287_960_720.jpg"
     >
+    <v-card-title></v-card-title>
     </v-img>
 
     <v-card-subtitle class="pb-0">2020/09/27</v-card-subtitle>
@@ -39,6 +40,7 @@
       height="200px"
       src="https://cdn.pixabay.com/photo/2019/05/19/15/02/sea-4214277_960_720.jpg"
     >
+    <v-card-title></v-card-title>
     </v-img>
 
     <v-card-subtitle class="pb-0">2020/09/24</v-card-subtitle>
@@ -68,6 +70,7 @@
       height="200px"
       src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
     >
+    <v-card-title></v-card-title>
     </v-img>
 
     <v-card-subtitle class="pb-0">2020/09/22</v-card-subtitle>
