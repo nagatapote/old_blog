@@ -9,6 +9,7 @@ import article2 from '../views/article/20200924.vue'
 import article3 from '../views/article/20200927.vue'
 import article4 from '../views/article/20200927-01.vue'
 import article5 from '../views/article/20200929.vue'
+import article6 from '../views/article/20200930.vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
@@ -55,6 +56,11 @@ const routes = [
     path: '/article5',
     name: 'article5',
     component: article5
+  },
+  {
+    path: '/article6',
+    name: 'article6',
+    component: article6
   }
 ]
 
