@@ -7,7 +7,8 @@ import Markdown from '../views/Markdown.vue'
 import article1 from '../views/article/20200922.vue'
 import article2 from '../views/article/20200924.vue'
 import article3 from '../views/article/20200927.vue'
-import article4 from '../views/article/2020092701.vue'
+import article4 from '../views/article/20200927-01.vue'
+import article5 from '../views/article/20200929.vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
@@ -49,6 +50,11 @@ const routes = [
     path: '/article4',
     name: 'article4',
     component: article4
+  },
+  {
+    path: '/article5',
+    name: 'article5',
+    component: article5
   }
 ]
 

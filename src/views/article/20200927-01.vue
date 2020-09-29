@@ -23,7 +23,7 @@ export default {
       public配下はbuildするとroot直下として扱われる
       assetsフォルダの下に置くと読み込まれないので注意 */
     this.$axios
-      .get('./markDownSource/2020092701.md')
+      .get('./markDownSource/20200927-01.md')
       .then(response => (this.source = response.data))
   }
 }
