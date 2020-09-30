@@ -28,11 +28,11 @@ PC：MacBookPro 13インチ メモリ8GB
 
 githubとググって、登録
 
-![NewRepositories](./img/20200922/NewRepositories.png)
+![NewRepositories](./img/article1/NewRepositories.png)
 
 ログイン後、左上の「New」をクリック
 
-![CreateRepositories](./img/20200922/CreateRepositories.png)
+![CreateRepositories](./img/article1/CreateRepositories.png)
 
 「Repository name」に好きな名前を入れて、「Create repository」をクリックすれば完了
 
@@ -54,11 +54,11 @@ githubとググって、登録
 
 上記ページで公開鍵の設定が可能。（GitHubに登録してある必要あり）
 
-![SSHkey](./img/20200922/SSHkey.png)
+![SSHkey](./img/article1/SSHkey.png)
 
 右上の「New SSH key」をクリック
 
-![addnew](./img/20200922/addnew.png)
+![addnew](./img/article1/addnew.png)
 
 「title」に自分の好きな名前
 
@@ -101,7 +101,7 @@ You've successfully authenticated, but GitHub does not provide shell access.
 
 以下の「Code」で確認可能
 
-![githubCode](./img/20200922/githubCode.png)
+![githubCode](./img/article1/githubCode.png)
 
 <kbd>$ git push -u origin master</kbd>
 
@@ -110,17 +110,17 @@ You've successfully authenticated, but GitHub does not provide shell access.
 
 netlifyとググって、githubでログイン
 
-![NewSiteFromGit](./img/20200922/NewSiteFromGit.png)
+![NewSiteFromGit](./img/article1/NewSiteFromGit.png)
 
 右上の「New site from Git」をクリック
 
-![CreateNewSite](./img/20200922/CreateNewSite.png)
+![CreateNewSite](./img/article1/CreateNewSite.png)
 
 左下の「GitHub」をクリック
 
 連携したいリポジトリを選択
 
-![DeploySite](./img/20200922/DeploySite.png)
+![DeploySite](./img/article1/DeploySite.png)
 
 vue.jsの場合、上記画像のように入力し、「Deploy site」をクリック
 
@@ -132,7 +132,7 @@ vue.jsの場合、上記画像のように入力し、「Deploy site」をクリ
 
 URLをクリックするとサイトが表示されます
 
-![Deploy](./img/20200922/Deploy.png)
+![Deploy](./img/article1/Deploy.png)
 
 ※上記画像は、名前.comでドメインを取得し、設定済み
 

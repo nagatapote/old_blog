@@ -35,7 +35,7 @@ Vuetifyを導入することで、簡単にいい感じのデザインにする�
 
 <kbd>$ npm run serve</kbd>
 
-![Vuetify](./img/20200929/Vuetify.png)
+![Vuetify](./img/article5/Vuetify.png)
 
 ### ■公式サイトからソースをコピペまたは参考にする
 ***
@@ -46,11 +46,11 @@ Vuetifyを導入することで、簡単にいい感じのデザインにする�
 
 左側のメニューや検索で実装したいコンポーネントを探し、右上の＜＞ボタンからコードを確認、コピペすることができます。
 
-![Vuetify](./img/20200929/Vuetify01.png)
+![Vuetify](./img/article5/Vuetify01.png)
 
 私のブログもVuetifyでデザイン等を実装しています。
 
-![Vuetify](./img/20200929/Vuetify02.png)
+![Vuetify](./img/article5/Vuetify02.png)
 
 以上
 
