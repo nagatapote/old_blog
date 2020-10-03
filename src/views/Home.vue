@@ -9,6 +9,35 @@
     <v-img
       class="white--text align-end"
       height="200px"
+      src="https://cdn.pixabay.com/photo/2016/11/08/04/49/jungle-1807476_960_720.jpg"
+    >
+    <v-card-title>node.js</v-card-title>
+    </v-img>
+
+    <v-card-subtitle class="pb-0">2020/10/03</v-card-subtitle>
+
+    <v-card-text class="text--primary">
+      <div>nodebrewでnodeのバージョン管理</div>
+    </v-card-text>
+    <v-card-actions>
+      <v-btn
+        color="orange"
+        text
+        to="/article7"
+      >
+        ReadMore
+      </v-btn>
+    </v-card-actions>
+  </v-card>
+  <br><br>
+
+<v-card
+    class="mx-auto"
+    max-width="400"
+  >
+    <v-img
+      class="white--text align-end"
+      height="200px"
       src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg"
     >
     <v-card-title>vue.js</v-card-title>
