@@ -9,7 +9,6 @@
 </template>
 
 <script>
-
 import VueMarkdown from 'vue-markdown'
 export default {
   components: {
@@ -28,3 +27,14 @@ export default {
   }
 }
 </script>
+
+<style>
+
+h1 {
+    padding: 0.3em;
+    color: #333;
+    background: #dae5f3;
+    border-bottom: solid 3px #455586;
+}
+
+</style>

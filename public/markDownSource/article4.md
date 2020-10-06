@@ -238,12 +238,4 @@ img {
     border: 5px solid green;
     max-width: 100%;
 }
-
-h1 {
-    padding: 0.3em;
-    color: #333;
-    background: #dae5f3;
-    border-bottom: solid 3px #455586;
-}
-
 </style>
