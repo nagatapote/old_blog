@@ -14,11 +14,9 @@ public/index.htmlの中身を変更せずにページタイトルを設定した
 ## 解決方法
 ***
 
-以下を追記する。
+vue.config.jsに以下を追記する。
 
 ```
-vue.config.js
-
 module.exports = {
   pages: {
     index: {

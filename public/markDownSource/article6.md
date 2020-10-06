@@ -17,13 +17,13 @@ Netlifyにデプロイ時、以下のエラーが発生
 ## 解決方法
 ***
 
-以下の設定で解決しました。
+babel.config.jsを以下の内容に変更し、解決しました。
 
-babel.config.js
-
+```
 module.exports = {
 presets: [ [ "@vue/app", { useBuiltIns: "entry" } ] ]
 }
+```
 
 以上
 

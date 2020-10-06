@@ -9,6 +9,7 @@
 </template>
 
 <script>
+
 import VueMarkdown from 'vue-markdown'
 export default {
   components: {
@@ -35,6 +36,15 @@ h1 {
     color: #333;
     background: #dae5f3;
     border-bottom: solid 3px #455586;
+}
+
+code {
+  display: inline-block;
+  padding: 0.1em 0.25em; /* 文字周りの余白 */
+  color: #444; /* 文字色 */
+  background-color: #e7edf3; /* 背景色 */
+  border-radius: 3px; /* 角丸 */
+  border: solid 1px #d6dde4; /* 枠線 */
 }
 
 </style>

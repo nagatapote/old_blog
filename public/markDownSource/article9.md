@@ -14,11 +14,9 @@
 ## 解決方法
 ***
 
-以下を追記する。
+router/index.jsに以下を追記する。
 
 ```
-router/index.js
-
 const router = new VueRouter({
 
 〜略〜
@@ -31,7 +29,6 @@ const router = new VueRouter({
     }
   }
 })
-
 ```
 
 以上
