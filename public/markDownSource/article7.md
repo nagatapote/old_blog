@@ -62,7 +62,9 @@ MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
 
 <kbd>$ vi ~/.zshrc</kbd>
 
-`export PATH=$HOME/.nodebrew/current/bin:$PATH`
+```
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+```
 
 <kbd>$ source ~/.zshrc</kbd>
 
