@@ -19,7 +19,7 @@ Netlifyにデプロイ時、以下のエラーが発生
 
 babel.config.jsを以下の内容に変更し、解決しました。
 
-```
+```javascript
 module.exports = {
 presets: [ [ "@vue/app", { useBuiltIns: "entry" } ] ]
 }

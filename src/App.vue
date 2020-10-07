@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <v-app id="inspire" v-highlight>
     <v-navigation-drawer
       v-model="drawer"
       app
@@ -13,6 +13,7 @@
             <v-list-item-title>Home</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
         <v-list-item to="/about">
           <v-list-item-action>
             <v-icon>mdi-account</v-icon>
@@ -21,6 +22,16 @@
             <v-list-item-title>Profile</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
+        <v-list-item to="/Article">
+          <v-list-item-action>
+            <v-icon>mdi-book-open-variant</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Article</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
         <v-list-item href="https://twitter.com/pote_nagata">
           <v-list-item-action>
             <v-icon>mdi-twitter</v-icon>
@@ -29,6 +40,7 @@
             <v-list-item-title>Twitter</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
         <v-list-item href="https://github.com/nagatapote">
           <v-list-item-action>
             <v-icon>mdi-github</v-icon>
@@ -55,7 +67,7 @@
         <v-row>
           </v-row>
           <transition>
-      <router-view/>
+      <router-view />
           </transition>
     </v-main>
     <v-footer

@@ -40,7 +40,7 @@ firebaseに登録し、プロジェクトを作成している
 ### ▼設定（src/main.jsに追記）
 ***
 
-```
+```javascript
 import firebase from 'firebase'
 
 const config = {
@@ -63,7 +63,7 @@ firebase.initializeApp(config);
 ### ▼登録画面（src/components/signup.vue）
 ***
 
-```
+```javascript
 <template>
  <div class="signup">
    <center>
@@ -113,7 +113,7 @@ methods: {
 ### ▼ログイン画面（src/components/signin.vue）
 ***
 
-```
+```javascript
 <template>
     <div class="signin">
         <center><table>
@@ -160,7 +160,7 @@ methods: {
 ### ▼ログイン成功画面（src/components/success.vue）
 ***
 
-```
+```javascript
 <template>
     <div class='success'>
         <h1 class='mt-5'>
@@ -195,7 +195,7 @@ export default {
 
 /src/router/index.jsに以下を追記する
 
-```
+```javascript
 import firebase from 'firebase'
 〜省略〜
 ,
