@@ -6,8 +6,8 @@ h1 {
 }
 
 .v-application code{
-    background: #25292f; /* 背景色 */
-    color: #fff; /* 文字色 */
+    all: unset;
+    color: #fff;
 }
 
 pre {
