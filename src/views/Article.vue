@@ -1,22 +1,31 @@
 <template>
-  <div>
-    <v-row id="md">
-      <v-col>
-        <vue-markdown :source="source"></vue-markdown>
-      </v-col>
-    </v-row>
+  <div id="md">
+    <vue-markdown :source="source"></vue-markdown>
   </div>
 </template>
 
 <script>
-
+import hljs from 'highlightjs'
 import VueMarkdown from 'vue-markdown'
+import 'highlightjs/styles/github-gist.css'
+import '../assets/article.css'
+
 export default {
   components: {
     VueMarkdown
   },
   data () {
     return { source: '' }
+  },
+  created: function () {
+    VueMarkdown.setOptions({
+      // code要素にdefaultで付くlangage-を削除
+      langPrefix: '',
+      // highlightjsを使用したハイライト処理を追加
+      highlight: function (code, lang) {
+        return hljs.highlightAuto(code, [lang]).value
+      }
+    })
   },
   mounted: function () {
     /* publicのフォルダに置いたmdファイルを取得する
@@ -28,23 +37,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-h1 {
-    padding: 0.3em;
-    color: #333;
-    background: #dae5f3;
-    border-bottom: solid 3px #455586;
-}
-
-code {
-  display: inline-block;
-  padding: 0.1em 0.25em; /* 文字周りの余白 */
-  color: #444; /* 文字色 */
-  background-color: #e7edf3; /* 背景色 */
-  border-radius: 3px; /* 角丸 */
-  border: solid 1px #d6dde4; /* 枠線 */
-}
-
-</style>
