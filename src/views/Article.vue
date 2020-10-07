@@ -1,6 +1,6 @@
 <template>
   <div id="md">
-        <vue-markdown :source="source">
+        <vue-markdown :source="source" v-highlight>
         </vue-markdown>
   </div>
 </template>

@@ -16,7 +16,7 @@
 
 router/index.jsに以下を追記する。
 
-```
+```javascript
 const router = new VueRouter({
 
 〜略〜

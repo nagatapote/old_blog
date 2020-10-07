@@ -16,7 +16,7 @@ public/index.htmlの中身を変更せずにページタイトルを設定した
 
 vue.config.jsに以下を追記する。
 
-```
+```javascript
 module.exports = {
   pages: {
     index: {
