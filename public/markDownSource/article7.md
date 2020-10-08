@@ -3,10 +3,13 @@
 
 ## 前提
 ***
+　
+
 MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
 
 ## やったこと
 ***
+　
 
 <b>・homebrewをインストール</b>
 
@@ -14,6 +17,7 @@ MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
 
 ### ■homebrewをインストール
 ***
+　
 
 以下の公式サイトへアクセス
 
@@ -25,6 +29,7 @@ MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
 
 ### ■nodebrewをインストール
 ***
+　
 
 <b>インストールコマンド</b>
 
@@ -32,6 +37,7 @@ MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
 
 #### ▼nodebrew各種コマンド
 ***
+　
 
 <b>利用可能なバージョン確認</b>
 
@@ -57,6 +63,7 @@ MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
 
 #### ▼「current」と「node -v」のバージョンが一致しない場合
 ***
+　
 
 <b>PATHが通っていない可能性があるので、下記方法でPATHを追記</b>
 

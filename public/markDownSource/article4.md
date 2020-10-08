@@ -3,16 +3,19 @@
 
 ## やってみたこと
 ***
+　
 
 vue.jsとfirebaseで認証機能を実装してみた
 
 ## 理由
 ***
+　
 
 会社で認証関係の仕事をしているので、気になってやってみた
 
 ## 前提
 ***
+　
 
 vue.jsをインストールしている
 
@@ -20,14 +23,17 @@ firebaseに登録し、プロジェクトを作成している
 
 ## 完成物
 ***
+　
 
 [https://dazzling-hawking-9f2edf.netlify.app](https://dazzling-hawking-9f2edf.netlify.app)
 
 ## ■手順
 ***
+　
 
 ### ▼firebase設定
 ***
+　
 
 ![Authentication](./img/article4/Authentication.png)
 
@@ -39,6 +45,7 @@ firebaseに登録し、プロジェクトを作成している
 
 ### ▼設定（src/main.jsに追記）
 ***
+　
 
 ```javascript
 import firebase from 'firebase'
@@ -62,6 +69,7 @@ firebase.initializeApp(config);
 
 ### ▼登録画面（src/components/signup.vue）
 ***
+　
 
 ```vue
 <template>
@@ -112,6 +120,7 @@ methods: {
 
 ### ▼ログイン画面（src/components/signin.vue）
 ***
+　
 
 ```vue
 <template>
@@ -159,6 +168,7 @@ methods: {
 
 ### ▼ログイン成功画面（src/components/success.vue）
 ***
+　
 
 ```vue
 <template>
@@ -192,6 +202,7 @@ export default {
 
 ### ▼ログイン成功画面へ直接アクセスできないようにする設定
 ***
+　
 
 /src/router/index.jsに以下を追記する
 

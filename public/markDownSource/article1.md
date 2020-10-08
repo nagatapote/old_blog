@@ -3,11 +3,13 @@
 
 ## 目的
 ***
+　
 
 技術ブログ作成し、やったことを残しておくため
 
 ## 使ったもの
 ***
+　
 
 PC：MacBookPro 13インチ メモリ8GB
 
@@ -15,16 +17,19 @@ PC：MacBookPro 13インチ メモリ8GB
 
 ## やったこと
 ***
+　
 
-- vue.jsとgithubの連携
+**・vue.jsとgithubの連携**
 
-- githubとnetlifyの連携
+**・githubとnetlifyの連携**
 
 ## ■vue.jsとgithubの連携
 ***
+　
 
 ### ▼githubの登録、リポジトリの作成
 ***
+　
 
 githubとググって、登録
 
@@ -38,6 +43,7 @@ githubとググって、登録
 
 ### ▼公開鍵・秘密鍵の作成
 ***
+　
 
 **鍵を入れるフォルダへ移動**
 
@@ -49,6 +55,7 @@ githubとググって、登録
 
 ### ▼公開鍵をGitHubにアップ
 ***
+　
 
 [https://github.com/settings/ssh](https://github.com/settings/ssh)
 
@@ -76,6 +83,7 @@ You've successfully authenticated, but GitHub does not provide shell access.
 
 ### ▼githubへpushする方法
 ***
+　
 
 **作業ディレクトリをgithubで管理するためのコマンド**
 
@@ -107,6 +115,7 @@ You've successfully authenticated, but GitHub does not provide shell access.
 
 ## ■githubとnetlifyの連携
 ***
+　
 
 netlifyとググって、githubでログイン
 

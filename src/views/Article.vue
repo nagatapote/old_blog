@@ -1,6 +1,9 @@
 <template>
   <div id="article" v-cloak>
-    <h2>Article</h2><br>
+    <h2>Article</h2><br/>
+
+<v-btn to="/Article">1</v-btn>
+<v-btn disabled>2</v-btn><br /><br />
 
 <v-card
     class="mx-auto"
@@ -263,7 +266,9 @@
       </v-btn>
     </v-card-actions>
   </v-card>
-  <br><br>
+  <br/>
+  <v-btn to="/Article">1</v-btn>
+<v-btn disabled>2</v-btn><br /><br />
   </div>
 </template>
 
