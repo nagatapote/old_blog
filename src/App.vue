@@ -67,9 +67,7 @@
         <v-row>
           </v-row>
           <transition>
-            <keep-alive>
       <router-view />
-            </keep-alive>
           </transition>
     </v-main>
     <v-footer
