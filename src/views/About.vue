@@ -1,5 +1,5 @@
 <template>
-  <div class="about" id="about" v-cloak>
+<div class="about" id="about" v-cloak>
     <h2>Profile</h2><br>
     <v-avatar size="200">
       <img
@@ -7,103 +7,29 @@
         alt="profile"
       >
     </v-avatar><br><br>
-    <v-row
-      class="mb-6"
-      justify="center"
-      no-gutters
-    >
-      <v-col lg="1">
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          名前<br>Name
-        </v-card>
-      </v-col>
-      <v-col md="2">
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          永田浩晃<br>Hiroaki Nagata
-        </v-card>
-      </v-col>
-    </v-row>
-    <v-row
-      class="mb-6"
-      justify="center"
-      no-gutters
-    >
-      <v-col lg="1">
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          あだ名<br>Nickname
-        </v-card>
-      </v-col>
-      <v-col md="2">
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          ぽて<br>pote
-        </v-card>
-      </v-col>
-    </v-row>
-       <v-row
-      class="mb-6"
-      justify="center"
-      no-gutters
-    >
-      <v-col lg="1">
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          趣味
-        </v-card>
-      </v-col>
-      <v-col md="2">
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          ウクレレ・よさこい
-        </v-card>
-      </v-col>
-    </v-row>
-    <v-row
-      class="mb-6"
-      justify="center"
-      no-gutters
-    >
-      <v-col lg="1">
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          目標
-        </v-card>
-      </v-col>
-      <v-col md="2">
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          サイドFIRE
-        </v-card>
-      </v-col>
-    </v-row>
-  </div>
+
+<center>
+<table border="1">
+<tr>
+<td>名前</td>
+<td>永田浩晃(Hiroaki Nagata)</td>
+</tr>
+<tr>
+<td>あだ名</td>
+<td>ぽて(pote)</td>
+</tr>
+<tr>
+<td>趣味</td>
+<td>ウクレレ・よさこい</td>
+</tr>
+<tr>
+<td>目標</td>
+<td>SIDE FIRE</td>
+</tr>
+</table>
+</center>
+
+</div>
 </template>
 <style>
 
