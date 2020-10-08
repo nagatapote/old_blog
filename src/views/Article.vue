@@ -9,7 +9,7 @@
     <v-img
       class="white--text align-end"
       height="200px"
-      src="https://cdn.pixabay.com/photo/2020/10/03/10/56/mountains-5623208_1280.jpg"
+      src="../assets/article/article9.jpg"
     >
     <v-card-title>vue.js</v-card-title>
     </v-img>
@@ -38,7 +38,7 @@
     <v-img
       class="white--text align-end"
       height="200px"
-      src="https://cdn.pixabay.com/photo/2017/05/09/03/46/alberta-2297204_1280.jpg"
+      src="../assets/article/article8.jpg"
     >
     <v-card-title>vue.js</v-card-title>
     </v-img>
@@ -67,7 +67,7 @@
     <v-img
       class="white--text align-end"
       height="200px"
-      src="https://cdn.pixabay.com/photo/2016/11/08/04/49/jungle-1807476_960_720.jpg"
+      src="../assets/article/article7.jpg"
     >
     <v-card-title>node.js</v-card-title>
     </v-img>
@@ -96,7 +96,7 @@
     <v-img
       class="white--text align-end"
       height="200px"
-      src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg"
+      src="../assets/article/article6.jpg"
     >
     <v-card-title>vue.js</v-card-title>
     </v-img>
@@ -125,7 +125,7 @@
     <v-img
       class="white--text align-end"
       height="200px"
-      src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_1280.jpg"
+      src="../assets/article/article5.jpg"
     >
     <v-card-title>vue.js</v-card-title>
     </v-img>
@@ -154,7 +154,7 @@
     <v-img
       class="white--text align-end"
       height="200px"
-      src="https://cdn.pixabay.com/photo/2017/04/09/09/56/avenue-2215317_960_720.jpg"
+      src="../assets/article/article4.jpg"
     >
     <v-card-title>vue.js</v-card-title>
     </v-img>
@@ -183,7 +183,7 @@
     <v-img
       class="white--text align-end"
       height="200px"
-      src="https://cdn.pixabay.com/photo/2016/08/11/23/48/italy-1587287_960_720.jpg"
+      src="../assets/article/article3.jpg"
     >
     <v-card-title>vue.js</v-card-title>
     </v-img>
@@ -212,7 +212,7 @@
     <v-img
       class="white--text align-end"
       height="200px"
-      src="https://cdn.pixabay.com/photo/2019/05/19/15/02/sea-4214277_960_720.jpg"
+      src="../assets/article/article2.jpg"
     >
     <v-card-title>vue.js</v-card-title>
     </v-img>
@@ -242,7 +242,7 @@
     <v-img
       class="white--text align-end"
       height="200px"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      src="../assets/article/article1.jpg"
     >
     <v-card-title>vue.js</v-card-title>
     </v-img>
