@@ -24,8 +24,7 @@
     </v-card-text>
     <v-card-actions>
       <v-btn
-        color="orange"
-        text
+        color="primary"
         to="/article9"
       >
         ReadMore
@@ -53,8 +52,7 @@
     </v-card-text>
     <v-card-actions>
       <v-btn
-        color="orange"
-        text
+        color="primary"
         to="/article8"
       >
         ReadMore
@@ -82,8 +80,7 @@
     </v-card-text>
     <v-card-actions>
       <v-btn
-        color="orange"
-        text
+        color="primary"
         to="/article7"
       >
         ReadMore
@@ -111,8 +108,7 @@
     </v-card-text>
     <v-card-actions>
       <v-btn
-        color="orange"
-        text
+        color="primary"
         to="/article6"
       >
         ReadMore
@@ -140,8 +136,7 @@
     </v-card-text>
     <v-card-actions>
       <v-btn
-        color="orange"
-        text
+        color="primary"
         to="/article5"
       >
         ReadMore
@@ -169,8 +164,7 @@
     </v-card-text>
     <v-card-actions>
       <v-btn
-        color="orange"
-        text
+        color="primary"
         to="/article4"
       >
         ReadMore
@@ -198,8 +192,7 @@
     </v-card-text>
     <v-card-actions>
       <v-btn
-        color="orange"
-        text
+        color="primary"
         to="/article3"
       >
         ReadMore
@@ -228,8 +221,7 @@
 
     <v-card-actions>
       <v-btn
-        color="orange"
-        text
+        color="primary"
         to="/article2"
       >
         ReadMore
@@ -258,8 +250,7 @@
 
     <v-card-actions>
       <v-btn
-        color="orange"
-        text
+        color="primary"
         to="/article1"
       >
         ReadMore

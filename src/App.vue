@@ -66,9 +66,7 @@
         </v-container>
         <v-row>
           </v-row>
-          <transition>
       <router-view />
-          </transition>
     </v-main>
     <v-footer
       color="indigo"
@@ -95,21 +93,5 @@ export default {
 #inspire {
   margin-left: 20px;
   margin-right: 20px;
-}
-
-.v-enter {
-  opacity: 0;
-  transform: translateY(-20px);
-}
-
-.v-enter-active {
-   transition: opacity 300ms ease-out, transform 300ms ease-out;
-}
-.v-leave-to {
-  opacity: 0;
-  transform: scale(0.97);
-}
-.v-leave-active {
-  transition: opacity 270ms ease-out, transform 270ms ease-out;
 }
 </style>
