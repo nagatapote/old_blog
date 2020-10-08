@@ -6,7 +6,6 @@
 
 <script>
 import VueMarkdown from 'vue-markdown'
-
 export default {
   el: 'md',
   components: {
