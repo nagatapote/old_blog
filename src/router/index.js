@@ -18,7 +18,7 @@ const routes = [
     meta: { title: 'pote\'s blog | Profile' }
   },
   {
-    path: '/Article',
+    path: '/Article/',
     name: 'Article',
     component: () => import('../views/Article.vue'),
     meta: { title: 'pote\'s blog | Article' }

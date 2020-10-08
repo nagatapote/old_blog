@@ -1,5 +1,5 @@
 <template>
-<div class="about" id="about" v-cloak>
+<div id="about">
     <h2>Profile</h2><br>
     <v-avatar size="200">
       <img

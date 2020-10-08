@@ -1,5 +1,5 @@
 <template>
-  <div id="md" v-highlight v-cloak>
+  <div id="md" v-highlight>
     <vue-markdown :source="source"></vue-markdown>
   </div>
 </template>
@@ -7,16 +7,13 @@
 <script>
 import Vue from 'vue'
 import VueMarkdown from 'vue-markdown'
-import axios from 'axios'
-import 'highlight.js/styles/default.css'
+import 'highlight.js/styles/rainbow.css'
 import Highlight from 'vue-markdown-highlight'
 
 Vue.use(Highlight)
-Vue.config.productionTip = false
-Vue.prototype.$axios = axios
 
 export default {
-  el: 'md',
+  el: '#md',
   components: {
     VueMarkdown
   },
@@ -24,9 +21,7 @@ export default {
     return { source: '' }
   },
   mounted: function () {
-    /* publicのフォルダに置いたmdファイルを取得する
-      public配下はbuildするとroot直下として扱われる
-      assetsフォルダの下に置くと読み込まれないので注意 */
+    /* publicフォルダに置いたmdファイルを取得する */
     this.$axios
       .get(`./markDownSource/${this.$route.params.id}.md`)
       .then(response => (this.source = response.data))

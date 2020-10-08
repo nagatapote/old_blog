@@ -71,7 +71,7 @@ firebase.initializeApp(config);
 ***
 　
 
-```vue
+```javascript
 <template>
  <div class="signup">
    <center>
@@ -122,7 +122,7 @@ methods: {
 ***
 　
 
-```vue
+```javascript
 <template>
     <div class="signin">
         <center><table>
@@ -170,7 +170,7 @@ methods: {
 ***
 　
 
-```vue
+```javascript
 <template>
     <div class='success'>
         <h1 class='mt-5'>

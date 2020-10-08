@@ -1,5 +1,5 @@
 <template>
-    <div id="home" v-cloak>
+    <div id="home">
         <h1>{{ message }}</h1>
     </div>
 </template>
