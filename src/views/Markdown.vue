@@ -5,15 +5,7 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import VueMarkdown from 'vue-markdown'
-import axios from 'axios'
-import 'highlight.js/styles/default.css'
-import Highlight from 'vue-markdown-highlight'
-
-Vue.use(Highlight)
-Vue.config.productionTip = false
-Vue.prototype.$axios = axios
 
 export default {
   el: 'md',
