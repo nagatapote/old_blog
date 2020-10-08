@@ -1,44 +1,36 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import BootstrapVue from 'bootstrap-vue'
 /** import Home from '../views/Home.vue' **/
-import About from '../views/About.vue'
-import Article from '../views/Article.vue'
-import Markdown from '../views/Markdown.vue'
-import MarkdownSample from '../views/MarkdownSample.vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.use(VueRouter)
-Vue.use(BootstrapVue)
 
 const routes = [
   {
     path: '/',
     name: 'Article',
-    component: Article,
+    component: () => import('../views/Article.vue'),
     meta: { title: 'pote\'s blog' }
   },
   {
     path: '/about',
     name: 'About',
-    component: About,
+    component: () => import('../views/About.vue'),
     meta: { title: 'pote\'s blog | Profile' }
   },
   {
     path: '/Article',
     name: 'Article',
-    component: Article,
+    component: () => import('../views/Article.vue'),
     meta: { title: 'pote\'s blog | Article' }
   },
   {
     path: '/:id',
-    component: Markdown
+    component: () => import('../views/Markdown.vue')
   },
   {
     path: '/MarkdownSample',
     name: 'MarkdownSample',
-    component: MarkdownSample
+    component: () => import('../views/MarkdownSample.vue')
   }
 ]
 
