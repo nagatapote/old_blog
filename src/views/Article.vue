@@ -1,5 +1,5 @@
 <template>
-  <div id="article">
+  <div id="article" v-cloak>
     <h2>Article</h2><br>
 
 <v-card

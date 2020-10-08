@@ -1,5 +1,5 @@
 <template>
-  <div id="md" v-highlight>
+  <div id="md" v-highlight v-cloak>
     <vue-markdown :source="source"></vue-markdown>
   </div>
 </template>
