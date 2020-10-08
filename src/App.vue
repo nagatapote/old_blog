@@ -92,11 +92,12 @@ export default {
 </script>
 
 <style>
-  #inspire {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .v-enter {
+#inspire {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.v-enter {
   opacity: 0;
   transform: translateY(-20px);
 }

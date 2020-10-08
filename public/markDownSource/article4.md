@@ -63,7 +63,7 @@ firebase.initializeApp(config);
 ### ▼登録画面（src/components/signup.vue）
 ***
 
-```javascript
+```vue
 <template>
  <div class="signup">
    <center>
@@ -113,7 +113,7 @@ methods: {
 ### ▼ログイン画面（src/components/signin.vue）
 ***
 
-```javascript
+```vue
 <template>
     <div class="signin">
         <center><table>
@@ -160,7 +160,7 @@ methods: {
 ### ▼ログイン成功画面（src/components/success.vue）
 ***
 
-```javascript
+```vue
 <template>
     <div class='success'>
         <h1 class='mt-5'>
@@ -197,8 +197,10 @@ export default {
 
 ```javascript
 import firebase from 'firebase'
-〜省略〜
-,
+
+〜略〜
+
+  ,
   {
     path: '/success',
     name: 'Success',
