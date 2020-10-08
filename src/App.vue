@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <v-app id="inspire" v-cloak>
     <v-navigation-drawer
       v-model="drawer"
       app
@@ -67,7 +67,9 @@
         <v-row>
           </v-row>
           <transition>
+            <keep-alive>
       <router-view />
+            </keep-alive>
           </transition>
     </v-main>
     <v-footer
