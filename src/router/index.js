@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Markdown from '../views/Markdown.vue'
 /** import Home from '../views/Home.vue' **/
 
 Vue.use(VueRouter)
@@ -25,7 +26,7 @@ const routes = [
   },
   {
     path: '/:id',
-    component: () => import('../views/Markdown.vue')
+    component: Markdown
   },
   {
     path: '/MarkdownSample',
