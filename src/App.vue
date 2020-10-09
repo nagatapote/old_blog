@@ -23,7 +23,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item to="/Article">
+        <v-list-item to="/Article1">
           <v-list-item-action>
             <v-icon>mdi-book-open-variant</v-icon>
           </v-list-item-action>

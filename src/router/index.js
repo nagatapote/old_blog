@@ -7,8 +7,8 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Article',
-    component: () => import('../views/Article.vue'),
+    name: 'Article1',
+    component: () => import('../views/Article1.vue'),
     meta: { title: 'pote\'s blog' }
   },
   {
@@ -18,9 +18,15 @@ const routes = [
     meta: { title: 'pote\'s blog | Profile' }
   },
   {
-    path: '/Article/',
-    name: 'Article',
-    component: () => import('../views/Article.vue'),
+    path: '/Article1',
+    name: 'Article1',
+    component: () => import('../views/Article1.vue'),
+    meta: { title: 'pote\'s blog | Article' }
+  },
+  {
+    path: '/Article2',
+    name: 'Article2',
+    component: () => import('../views/Article2.vue'),
     meta: { title: 'pote\'s blog | Article' }
   },
   {
