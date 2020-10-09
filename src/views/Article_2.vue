@@ -1,9 +1,9 @@
 <template>
-  <div id="article2">
+  <div id="article_2">
     <h2>Article</h2><br/>
 
-<v-btn to="/Article1">1</v-btn>
-<v-btn to="/Article2">2</v-btn><br /><br />
+<v-btn to="/Article_1">1</v-btn>
+<v-btn to="/Article_2">2</v-btn><br /><br />
 
 <v-card class="mx-auto" max-width="400">
     <v-img class="white--text align-end" height="200px" src="../assets/article/article9.jpg">
@@ -131,14 +131,14 @@
   </v-card>
   <br/>
 
-  <v-btn to="/Article1">1</v-btn>
-<v-btn to="/Article2">2</v-btn><br /><br />
+  <v-btn to="/Article_1">1</v-btn>
+<v-btn to="/Article_2">2</v-btn><br /><br />
   </div>
 </template>
 
 <style>
 
-#article2 {
+#article_2 {
   text-align: center;
 }
 
