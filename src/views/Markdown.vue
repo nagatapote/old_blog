@@ -5,14 +5,7 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import VueMarkdown from 'vue-markdown'
-import Highlight from 'vue-markdown-highlight'
-import 'highlight.js/styles/rainbow.css'
-import axios from 'axios'
-
-Vue.use(Highlight)
-Vue.prototype.$axios = axios
 
 export default {
   el: '#md',
