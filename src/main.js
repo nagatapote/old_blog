@@ -6,9 +6,9 @@ import vuetify from './plugins/vuetify'
 import axios from 'axios'
 import Highlight from 'vue-markdown-highlight'
 
-Vue.config.productionTip = false
 Vue.prototype.$axios = axios
 Vue.use(Highlight)
+Vue.config.productionTip = false
 
 /* アドセンスの使用宣言 */
 Vue.use(require('vue-script2'))
