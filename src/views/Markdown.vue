@@ -5,12 +5,7 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import VueMarkdown from 'vue-markdown'
-import 'highlight.js/styles/rainbow.css'
-import Highlight from 'vue-markdown-highlight'
-
-Vue.use(Highlight)
 
 export default {
   el: '#md',
