@@ -3,11 +3,7 @@ import App from './App.vue'
 import router from './router'
 import Ads from 'vue-google-adsense'
 import vuetify from './plugins/vuetify'
-import axios from 'axios'
-import Highlight from 'vue-markdown-highlight'
 
-Vue.prototype.$axios = axios
-Vue.use(Highlight)
 Vue.config.productionTip = false
 
 /* アドセンスの使用宣言 */
