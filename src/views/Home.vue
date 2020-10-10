@@ -2,7 +2,7 @@
 <div id="home">
   <v-parallax
     dark
-    src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+    src="../assets/vbanner.jpg"
   >
     <v-row
       align="center"
