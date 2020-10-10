@@ -8,7 +8,7 @@
       <v-list dense>
         <v-list-item to="/">
           <v-list-item-action>
-            <v-icon>mdi-home</v-icon>
+            <v-icon>{{ mdiHome }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>Home</v-list-item-title>
@@ -17,7 +17,7 @@
 
         <v-list-item to="/about">
           <v-list-item-action>
-            <v-icon>mdi-account</v-icon>
+            <v-icon>{{ mdiAccount }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>Profile</v-list-item-title>
@@ -26,7 +26,7 @@
 
         <v-list-item to="/Article_1">
           <v-list-item-action>
-            <v-icon>mdi-book-open-variant</v-icon>
+            <v-icon>{{ mdiBookOpenVariant }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>Article</v-list-item-title>
@@ -35,7 +35,7 @@
 
         <v-list-item href="https://twitter.com/pote_nagata">
           <v-list-item-action>
-            <v-icon>mdi-twitter</v-icon>
+            <v-icon>{{ mdiTwitter }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>Twitter</v-list-item-title>
@@ -44,7 +44,7 @@
 
         <v-list-item href="https://github.com/nagatapote">
           <v-list-item-action>
-            <v-icon>mdi-github</v-icon>
+            <v-icon>{{ mdiGithub }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>Github</v-list-item-title>
@@ -79,12 +79,19 @@
 </template>
 
 <script>
+import { mdiHome, mdiAccount, mdiBookOpenVariant, mdiTwitter, mdiGithub } from '@mdi/js'
+
 export default {
   props: {
     source: String
   },
   data: () => ({
-    drawer: null
+    drawer: null,
+    mdiHome: mdiHome,
+    mdiAccount: mdiAccount,
+    mdiBookOpenVariant: mdiBookOpenVariant,
+    mdiTwitter: mdiTwitter,
+    mdiGithub: mdiGithub
   })
 }
 
