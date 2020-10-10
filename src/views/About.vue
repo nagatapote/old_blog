@@ -1,7 +1,7 @@
 <template>
 <div id="about">
     <h2>Profile</h2><br>
-    <v-avatar size="200">
+    <v-avatar size="164">
       <img
         src="../assets/profile.png"
         alt="profile"

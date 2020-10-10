@@ -7,8 +7,8 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Article_1',
-    component: () => import('../views/Article_1.vue'),
+    name: 'Home',
+    component: () => import('../views/Home.vue'),
     meta: { title: 'pote\'s blog' }
   },
   {

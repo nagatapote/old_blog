@@ -4,6 +4,7 @@
       v-model="drawer"
       app
     >
+
       <v-list dense>
         <v-list-item to="/">
           <v-list-item-action>
@@ -60,14 +61,14 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>pote's blog</v-toolbar-title>
     </v-app-bar>
-
     <v-main>
       <v-container>
         </v-container>
         <v-row>
           </v-row>
-      <router-view />
+          <router-view />
     </v-main>
+
     <v-footer
       color="indigo"
       app
@@ -94,4 +95,5 @@ export default {
   margin-left: 20px;
   margin-right: 20px;
 }
+
 </style>
