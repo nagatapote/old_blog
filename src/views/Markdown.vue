@@ -26,6 +26,11 @@ export default {
 </script>
 
 <style>
+#md img {
+    border: 5px solid green;
+    max-width: 100%;
+}
+
 #md h1 {
     padding: 0.3em;
     color: #333;

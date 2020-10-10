@@ -31,10 +31,3 @@ module.exports = {
 ```
 
 以上
-
-<style>
-img {
-    border: 5px solid green;
-    max-width: 100%;
-}
-</style>

@@ -34,10 +34,3 @@ publicディレクトリに、「_redirects」というファイルを作成す�
 <kbd>/* /index.html 200</kbd>
 
 以上
-
-<style>
-img {
-    border: 5px solid green;
-    max-width: 100%;
-}
-</style>

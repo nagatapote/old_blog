@@ -27,10 +27,3 @@
 その後、通常通りpush可能になりました
 
 以上
-
-<style>
-img {
-    border: 5px solid green;
-    max-width: 100%;
-}
-</style>

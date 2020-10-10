@@ -148,10 +148,3 @@ URLをクリックするとサイトが表示されます
 [お名前.comで取得したドメインを、Netlify に設定する方法](https://note.com/koushikagawa/n/n407cde93bdca)
 
 以上
-
-<style>
-img {
-    border: 5px solid green;
-    max-width: 100%;
-}
-</style>

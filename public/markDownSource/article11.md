@@ -71,12 +71,36 @@ export default {
 ***
 　
 
-以下のように囲むとシンタックスハイライトが適用され、色が変わります。
+以下のように囲むとシンタックスハイライトが適用され、色が変わります。(\は消してね。)
 
-![javascript](./img/article11/javascript.png)
+```
+```javascript
+<script>
+import 'highlight.js/styles/default.css'
+import Highlight from 'vue-markdown-highlight'
+Vue.use(Highlight)
+</script>
+\```
+```
 
-![html](./img/article11/html.png)
+```
+```html
+<style>
+.v-application code {
+    background: #25292f;
+    color: #fff;
+}
 
+pre {
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 5px;
+    background: #25292f;
+    color: #fff;
+}
+</style>
+\```
+```
 
 ## VuetifyのCSSを上書き
 ***
@@ -86,7 +110,7 @@ export default {
 
 Vuetifyを導入している場合、Vuetifyのcssが優先されるようです。
 
-Markdownで「\```」は`<pre><code>`なのですが、vuetifyのcssで`<code>`に赤文字、赤マーカーになってしまいます。
+Markdownで「\```」は`<pre><code>`なのですが、vuetifyのcssで`<code>`が赤文字、赤マーカーになってしまいます。
 
 以下のように、背景と文字色を上書きしました。
 
@@ -100,20 +124,13 @@ Markdownで「\```」は`<pre><code>`なのですが、vuetifyのcssで`<code>`�
 }
 
 pre {
-    margin: 1em 0; /* ブロック前後の余白 */
-    padding: 1em; /* ブロック内の余白 */
-    border-radius: 5px; /* 角丸 */
-    background: #25292f; /* 背景色 */
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 5px;
+    background: #25292f;
     color: #fff;
 }
 </style>
 ```
 
 以上
-
-<style>
-img {
-    border: 5px solid green;
-    max-width: 100%;
-}
-</style>

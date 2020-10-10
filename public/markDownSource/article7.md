@@ -76,10 +76,3 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 <kbd>$ source ~/.zshrc</kbd>
 
 以上
-
-<style>
-img {
-    border: 5px solid green;
-    max-width: 100%;
-}
-</style>

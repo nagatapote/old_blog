@@ -58,10 +58,3 @@ Vuetifyを導入することで、簡単にいい感じのデザインにする�
 ![Vuetify](./img/article5/Vuetify02.png)
 
 以上
-
-<style>
-img {
-    border: 5px solid green;
-    max-width: 100%;
-}
-</style>
