@@ -8,6 +8,7 @@ import Highlight from 'vue-markdown-highlight'
 import 'highlight.js/styles/rainbow.css'
 
 Vue.use(Highlight)
+
 Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 
