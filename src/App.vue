@@ -82,7 +82,6 @@
 import { mdiHome, mdiAccount, mdiBookOpenVariant, mdiTwitter, mdiGithub } from '@mdi/js'
 
 export default {
-  el: '#inspire',
   props: {
     source: String
   },

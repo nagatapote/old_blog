@@ -29,6 +29,12 @@ const routes = [
     meta: { title: 'pote\'s blog | Article' }
   },
   {
+    path: '/Form',
+    name: 'Form',
+    component: () => import('../views/Form.vue'),
+    meta: { title: 'pote\'s blog | Form' }
+  },
+  {
     path: '/:id',
     component: () => import('../views/Markdown.vue')
   }
