@@ -5,7 +5,6 @@ import vuetify from './plugins/vuetify'
 import router from './router'
 import axios from 'axios'
 import Highlight from 'vue-markdown-highlight'
-import 'highlight.js/styles/rainbow.css'
 
 Vue.use(Highlight)
 
