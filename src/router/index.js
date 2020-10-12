@@ -31,7 +31,19 @@ const routes = [
   {
     path: '/Form',
     name: 'Form',
-    component: () => import('../views/Form.vue'),
+    component: () => import('../components/Form.vue'),
+    meta: { title: 'pote\'s blog | Form' }
+  },
+  {
+    path: '/thanks',
+    name: 'success',
+    component: () => import('../components/SubmissionSuccess.vue'),
+    meta: { title: 'pote\'s blog | Form' }
+  },
+  {
+    path: '/404',
+    name: 'fail',
+    component: () => import('../components/SubmissionFail.vue'),
     meta: { title: 'pote\'s blog | Form' }
   },
   {

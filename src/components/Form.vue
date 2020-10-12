@@ -1,6 +1,6 @@
 <template>
-<div id="form">
-<form name="contact" method="POST" data-netlify="true">
+<div id='form'>
+<form name="contact" method="POST" netlify>
   <p>
     <label>Your Name: <input type="text" name="name" /></label>
   </p>
@@ -22,3 +22,30 @@
 </form>
 </div>
 </template>
+
+<script>
+import axios from 'axios'
+
+export default {
+  name: '#form',
+  data () {
+    return {
+      form: {
+        askPerson: ''
+      }
+    }
+  },
+  methods: {
+    handleSubmit () {
+      axios.post('/', {
+      })
+        .then(() => {
+          this.$router.push('thanks')
+        })
+        .catch(() => {
+          this.$router.push('404')
+        })
+    }
+  }
+}
+</script>
