@@ -36,9 +36,14 @@ export default {
     }
   },
   methods: {
-    handleSubmit () {
-      axios.post('/', {
-      })
+    Submit () {
+      axios.post('/',
+        this.encode({
+          "form-name": "contact",
+          ...this.form
+        }),
+        axiosConfig
+        )
         .then(() => {
           this.$router.push('thanks')
         })
