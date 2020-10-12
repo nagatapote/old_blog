@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style rel="preload">
+<style>
 #md img {
     border: 5px solid green;
     max-width: 100%;

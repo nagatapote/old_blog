@@ -52,7 +52,7 @@
   </div>
 </template>
 
-<style rel="preload">
+<style>
 
 #article_1 {
   text-align: center;
