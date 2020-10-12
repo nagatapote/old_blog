@@ -136,8 +136,7 @@
   </div>
 </template>
 
-<style> 
-
+<style>
 #article_2 {
   text-align: center;
 }
