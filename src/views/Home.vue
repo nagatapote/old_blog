@@ -25,7 +25,7 @@
   </div>
 </template>
 
-<script>
+<script rel="preload">
 export default {
   data () {
     return {

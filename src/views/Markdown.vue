@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script>
+<script rel="preload">
 import VueMarkdown from 'vue-markdown'
 
 export default {
@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style>
+<style rel="preload">
 #md img {
     border: 5px solid green;
     max-width: 100%;

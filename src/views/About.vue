@@ -31,7 +31,7 @@
 
 </div>
 </template>
-<style>
+<style rel="preload">
 
 #about {
   text-align: center;

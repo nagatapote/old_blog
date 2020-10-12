@@ -78,7 +78,7 @@
   </v-app>
 </template>
 
-<script>
+<script rel="preload">
 import { mdiHome, mdiAccount, mdiBookOpenVariant, mdiTwitter, mdiGithub } from '@mdi/js'
 
 export default {
@@ -97,7 +97,7 @@ export default {
 
 </script>
 
-<style>
+<style rel="preload">
 #inspire {
   margin-left: 20px;
   margin-right: 20px;

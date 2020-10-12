@@ -136,7 +136,7 @@
   </div>
 </template>
 
-<style>
+<style rel="preload">
 
 #article_2 {
   text-align: center;
