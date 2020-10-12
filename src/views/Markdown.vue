@@ -65,7 +65,6 @@ Style with support for rainbow parens
   color: #d1d9e1;
 }
 
-
 .hljs-comment,
 .hljs-quote {
   color: #969896;
