@@ -7,16 +7,13 @@
   />
   <v-form
     ref="form"
-    name="contact"
     method="post"
     netlify
-    data-netlify="true"
-    v-model="valid"
     lazy-validation
   >
   　<v-text-field
     　v-show="false"
-    　v-model="title"
+    　v-model="valid"
     　name="form-name"
   　/>
     <v-text-field
