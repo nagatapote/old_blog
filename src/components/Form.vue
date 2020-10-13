@@ -41,20 +41,11 @@
 
     <v-btn
       type="submit"
-      :disabled="!valid"
+      :disabled="valid"
       color="success"
       class="mr-4"
-      @click="validate"
     >
       Submit
-    </v-btn>
-
-    <v-btn
-      color="error"
-      class="mr-4"
-      @click="reset"
-    >
-      Reset Form
     </v-btn>
   </v-form>
   </div>
@@ -64,24 +55,29 @@
 export default {
   data: () => ({
     title: 'contact',
-    valid: true,
     name: '',
+    email: '',
+    message: '',
     nameRules: [
       v => !!v || 'Name is required',
       v => (v && v.length <= 10) || 'Name must be less than 10 characters'
     ],
-    email: '',
     emailRules: [
       v => !!v || 'E-mail is required',
       v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
     ]
   }),
-  methods: {
-    validate () {
-      this.$refs.form.validate()
-    },
-    reset () {
-      this.$refs.form.reset()
+  computed: {
+    valid () {
+      if (
+        this.name !== '' &&
+        this.email !== '' &&
+        this.message !== ''
+      ) {
+        return false
+      } else {
+        return true
+      }
     }
   }
 }

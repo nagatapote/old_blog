@@ -33,6 +33,15 @@
           </v-list-item-content>
         </v-list-item>
 
+        <v-list-item to="/Form">
+          <v-list-item-action>
+            <v-icon>{{ mdiEmail }}</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Contact</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
         <v-list-item href="https://twitter.com/pote_nagata">
           <v-list-item-action>
             <v-icon>{{ mdiTwitter }}</v-icon>
@@ -79,7 +88,7 @@
 </template>
 
 <script>
-import { mdiHome, mdiAccount, mdiBookOpenVariant, mdiTwitter, mdiGithub } from '@mdi/js'
+import { mdiHome, mdiAccount, mdiBookOpenVariant, mdiEmail, mdiTwitter, mdiGithub } from '@mdi/js'
 
 export default {
   props: {
@@ -90,6 +99,7 @@ export default {
     mdiHome: mdiHome,
     mdiAccount: mdiAccount,
     mdiBookOpenVariant: mdiBookOpenVariant,
+    mdiEmail: mdiEmail,
     mdiTwitter: mdiTwitter,
     mdiGithub: mdiGithub
   })
