@@ -15,11 +15,11 @@
     </noscript>
     <div id="app"></div>
     <!-- A little help for the Netlify post-processing bots -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
+    <v-form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <v-text-field v-model="name" label="name" name="name" autofocus/>
+      <v-text-field v-model="email" label="E-mail" name="email"/>
+      <v-textarea v-model="message" label="message" name="message"/>
+    </v-form>
     <!-- built files will be auto injected -->
     <script data-ad-client="ca-pub-3401994941764286" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </body>
