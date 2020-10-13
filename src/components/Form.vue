@@ -18,6 +18,7 @@
       <v-row>
         <v-col cols="12">
           <v-text-field
+            type="text"
             v-model="name"
             label="name"
             name="name"
@@ -28,6 +29,7 @@
       <v-row>
         <v-col cols="12">
           <v-text-field
+            type="email"
             v-model="email"
             label="E-mail"
             name="email"
