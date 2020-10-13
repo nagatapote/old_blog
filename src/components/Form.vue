@@ -11,11 +11,11 @@
     netlify
     lazy-validation
   >
-  　<v-text-field
-    　v-show="false"
-    　v-model="valid"
-    　name="form-name"
-  　/>
+  <v-text-field
+    v-show="false"
+    v-model="title"
+    name="form-name"
+  />
     <v-text-field
       v-model="name"
       :counter="10"
