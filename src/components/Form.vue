@@ -1,43 +1,80 @@
 <template>
-  <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-    <input type="hidden" name="form-name" value="contact" />
-    <label>Your Name: <input type="text" name="name" /></label>
-    <label>Your Email: <input type="email" name="email" /></label>
-    <label>Message: <textarea name="message"></textarea></label>
-    <button @submit.prevent="handleSubmit">Send</button>
-  </form>
+  <v-container tag="section">
+    <v-row>
+      <v-col
+        v-text="title.toUpperCase()"
+        cols="12"
+        tag="h1"
+      />
+    </v-row>
+    <v-form method="post" netlify>
+      <v-text-field
+        v-show="false"
+        v-model="title"
+        name="form-name"
+      />
+      <v-row>
+        <v-col cols="12">
+          <v-text-field
+            v-model="name"
+            label="name"
+            name="name"
+            autofocus
+          />
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="12">
+          <v-text-field
+            v-model="email"
+            label="E-mail"
+            name="email"
+          />
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="12">
+          <v-textarea
+            v-model="message"
+            label="message"
+            name="message"
+          />
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <v-btn
+            :disabled="isEmpty"
+            type="submit"
+          >
+            submit
+          </v-btn>
+        </v-col>
+      </v-row>
+    </v-form>
+  </v-container>
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
-  methods: {
-    encode (data) {
-      return Object.keys(data)
-        .map(
-          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join('&')
-    },
-    handleSubmit () {
-      const axiosConfig = {
-        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+  data () {
+    return {
+      title: 'contact',
+      name: '',
+      email: '',
+      message: ''
+    }
+  },
+  computed: {
+    isEmpty () {
+      if (
+        this.name !== '' &&
+        this.email !== '' &&
+        this.message !== ''
+      ) {
+        return false
       }
-      axios.post(
-        '/',
-        this.encode({
-          'form-name': 'contact',
-          ...this.form
-        })
-          .then(() => {
-            this.$router.push('thanks')
-          })
-          .catch(() => {
-            this.$router.push('404')
-          }),
-        axiosConfig
-      )
+      return true
     }
   }
 }
