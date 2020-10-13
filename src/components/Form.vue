@@ -1,7 +1,8 @@
 <template>
-<div class="Form">
+<div>
   <form name="contact" method="POST" data-netlify="true">
   <input type="hidden" name="form-name" value="contact" />
+<div class="Form">
   <div class="Form-Item">
     <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
     <input type="text" name="name" class="Form-Item-Input" placeholder="例）山田太郎">
@@ -14,7 +15,8 @@
     <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
     <textarea name="message" class="Form-Item-Textarea"></textarea>
   </div>
-  <input type="submit" class="Form-Btn" value="送信する">
+  <button type="submit" class="Form-Btn">送信する</button>
+</div>
 </form>
 </div>
 </template>
