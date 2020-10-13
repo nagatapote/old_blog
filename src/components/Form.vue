@@ -65,7 +65,7 @@ export default {
       title: 'contact',
       name: '',
       email: '',
-      message: '' 
+      message: ''
     }
   },
   computed: {
@@ -73,7 +73,7 @@ export default {
       if (
         this.name !== '' &&
         this.email !== '' &&
-        this.message !== '' 
+        this.message !== ''
       ) {
         return false
       }
