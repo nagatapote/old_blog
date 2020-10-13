@@ -1,5 +1,5 @@
 <template>
-  <v-container tag="section">
+  <v-container tag="contact">
     <v-row>
       <v-col
         v-text="title.toUpperCase()"
@@ -8,11 +8,11 @@
       />
     </v-row>
     <v-form method="post" netlify>
-      <input type="hidden" name="form-name" value="contact" />
       <v-text-field
         v-show="false"
         v-model="title"
         name="form-name"
+        value="contact"
       />
       <v-row>
         <v-col cols="12">
