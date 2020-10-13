@@ -7,7 +7,8 @@
         tag="h1"
       />
     </v-row>
-    <v-form name="contact" method="post" netlify data-netlify="true">
+    <v-form method="post" netlify>
+      <input type="hidden" name="form-name" value="contact" />
       <v-text-field
         v-show="false"
         v-model="title"
