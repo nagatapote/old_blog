@@ -4,15 +4,40 @@
     <label>Your Name: <input type="text" name="name" /></label>
     <label>Your Email: <input type="email" name="email" /></label>
     <label>Message: <textarea name="message"></textarea></label>
-    <button v-on:click="submit">Send</button>
+    <button @submit.prevent="handleSubmit">Send</button>
   </form>
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   methods: {
-    submit: function () {
-      this.$router.push('thanks')
+    encode (data) {
+      return Object.keys(data)
+        .map(
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join('&')
+    },
+    handleSubmit () {
+      const axiosConfig = {
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      }
+      axios.post(
+        '/',
+        this.encode({
+          'form-name': 'contact',
+          ...this.form
+        })
+          .then(() => {
+            this.$router.push('thanks')
+          })
+          .catch(() => {
+            this.$router.push('404')
+          }),
+        axiosConfig
+      )
     }
   }
 }
