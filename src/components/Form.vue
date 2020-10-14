@@ -186,6 +186,7 @@ export default {
 
 button:valid{
   background-color: #5bc8ac;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
