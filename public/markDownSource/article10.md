@@ -1,40 +1,28 @@
 # Markdownファイルを１つのvueファイルからURLに応じて動的に読み込む
-　
 
 ## 前提
-***
-　
-
 vue.js
 
 vue-router
 
 ## 目的
-***
-　
-
 Markdownファイルを配置するだけで、１つのvueファイルからURLごとに動的に読み込むようにする。
 
 Markdownファイルを配置するごとに、vueファイルを作成することをやめたかった。
 　
-
 ## やったこと
-***
-　
-
 **・vue-markdownのインストール**
 
 **・axiosのインストール**
 
 **・$route.params.idでURLにごとに読み込む**
 
-## vue-markdownのインストール
-***
-　
-
+### vue-markdownのインストール
 以下のコマンドでvue-markdownをインストール
 
-<kbd>$ npm install --save vue-markdown</kbd>
+```
+$ npm install --save vue-markdown
+```
 
 以下のように記述することで使えるようになります。
 
@@ -50,13 +38,13 @@ import VueMarkdown from 'vue-markdown'
 </script>
 ```
 
-## axiosのインストール
-***
-　
+### axiosのインストール
 
 以下のコマンドでインストールします。
 
-<kbd>$ npm install axios</kbd>
+```
+$ npm install axios
+```
 
 main.jsに以下を記述することで使えるようになります。
 
@@ -67,9 +55,7 @@ import axios from 'axios'
 Vue.prototype.$axios = axios
 ```
 
-## $route.params.idでURLにごとに読み込む
-***
-　
+### $route.params.idでURLにごとに読み込む
 
 router/index.jsを以下のように記述します。
 
@@ -82,9 +68,7 @@ component: () => import('../views/Markdown.vue')
 ```
 
 vueファイルに$route.params.idを記述します。
-
-以下は完成形となります。
-
+以下は完成形となります。<br />
 **Markdown.vue**
 
 ```javascript
@@ -116,10 +100,7 @@ export default {
 </script>
 ```
 
-public/markDownSource配下にMarkdownファイルを配置しています。
-
+public/markDownSource配下にMarkdownファイルを配置しています。<br />
 以下のように、アクセスしたURLと同じ名前のmarkdownファイルを表示します。
-
-/article1にアクセスした場合に、public/markDownSource/article1.mdを表示。
-
+/article1にアクセスした場合に、public/markDownSource/article1.mdを表示。<br />
 以上。

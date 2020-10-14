@@ -1,78 +1,72 @@
 # nodebrewでnodeのバージョン管理
-　
-
 ## 前提
-***
-　
-
 MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
 
 ## やったこと
-***
-　
+**・homebrewをインストール**
 
-<b>・homebrewをインストール</b>
+**・nodebrewをインストール**
 
-<b>・nodebrewをインストール</b>
-
-### ■homebrewをインストール
-***
-　
-
+### homebrewをインストール
 以下の公式サイトへアクセス
-
-[https://brew.sh/index_ja](https://brew.sh/index_ja)
-
-以下のコマンドでインストール
-
+<a href="https://brew.sh/index_ja" target="_blank">https://brew.sh/index_ja</a><br />
+公式サイト記載のコマンドでインストール
 ![homebrew](./img/article7/homebrew.png)
 
-### ■nodebrewをインストール
-***
-　
+### nodebrewをインストール
+**インストールコマンド**
 
-<b>インストールコマンド</b>
+```
+$ brew install nodebrew
+```
 
-<kbd>$ brew install nodebrew</kbd>
+#### nodebrew各種コマンド
 
-#### ▼nodebrew各種コマンド
-***
-　
+**利用可能なバージョン確認**
 
-<b>利用可能なバージョン確認</b>
+```
+$ nodebrew ls-remote
+```
 
-<kbd>$ nodebrew ls-remote</kbd>
+**特定のバージョンのインストール**
 
-<b>特定のバージョンのインストール</b>
+```
+$ nodebrew install-binary [バージョン]
+```
 
-<kbd>$ nodebrew install-binary [バージョン]</kbd>
+**利用可能なバージョン**
 
-<b>利用可能なバージョン</b>
+```
+$ nodebrew ls
+```
 
-<kbd>nodebrew ls</kbd>
+※「current: [バージョン]」が現在利用しているバージョン<br />
+**バージョンの切り替え**
 
-※「current: [バージョン]」が現在利用しているバージョン
+```
+$ nodebrew use [バージョン]
+```
 
-<b>バージョンの切り替え</b>
+**バージョン確認**
 
-<kbd>$ nodebrew use [バージョン]</kbd>
+```
+$ node -v
+```
 
-<b>バージョン確認</b>
+#### 「current」と「node -v」のバージョンが一致しない場合
 
-<kbd>$ node -v</kbd>
+**PATHが通っていない可能性があるので、下記方法でPATHを追記**
 
-#### ▼「current」と「node -v」のバージョンが一致しない場合
-***
-　
-
-<b>PATHが通っていない可能性があるので、下記方法でPATHを追記</b>
-
-<kbd>$ vi ~/.zshrc</kbd>
+```
+$ vi ~/.zshrc
+```
 
 ```
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 ```
 
-<kbd>$ source ~/.zshrc</kbd>
+```
+$ source ~/.zshrc
+```
 
 以上

@@ -1,116 +1,130 @@
 <template>
-  <v-app id="inspire">
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-    >
+<div>
+<header>
+  <h1>pote's blog</h1>
+</header>
+<input type="checkbox" id="cp_navimenuid">
+<label class="menu" for="cp_navimenuid">
 
-      <v-list dense>
-        <v-list-item to="/">
-          <v-list-item-action>
-            <v-icon>{{ mdiHome }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+<div class="menubar">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</div>
 
-        <v-list-item to="/about">
-          <v-list-item-action>
-            <v-icon>{{ mdiAccount }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Profile</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item to="/Article_1">
-          <v-list-item-action>
-            <v-icon>{{ mdiBookOpenVariant }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Article</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item to="/Form">
-          <v-list-item-action>
-            <v-icon>{{ mdiEmail }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Contact</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item href="https://twitter.com/pote_nagata">
-          <v-list-item-action>
-            <v-icon>{{ mdiTwitter }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Twitter</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item href="https://github.com/nagatapote">
-          <v-list-item-action>
-            <v-icon>{{ mdiGithub }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Github</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-app-bar
-      app
-      color="indigo"
-      dark
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>pote's blog</v-toolbar-title>
-    </v-app-bar>
-    <v-main>
-      <v-container>
-        </v-container>
-        <v-row>
-          </v-row>
-          <router-view />
-    </v-main>
-
-    <v-footer
-      color="indigo"
-      app
-    >
-      <span class="white--text">&copy; 2020 pote's blog</span>
-    </v-footer>
-  </v-app>
+<ul>
+  <li><router-link to="/">Home</router-link></li>
+  <li><router-link to="/About">Profile</router-link></li>
+  <li><router-link to="/Article_1">Article</router-link></li>
+  <li><router-link to="/Form">Contact</router-link></li>
+  <li><a target="_blank" href="https://twitter.com/pote_nagata">Twitter</a></li>
+  <li><a target="_blank" href="https://github.com/nagatapote">Github</a></li>
+</ul>
+</label>
+<router-view />
+<footer>
+&copy; 2020 pote's blog
+</footer>
+</div>
 </template>
 
-<script>
-import { mdiHome, mdiAccount, mdiBookOpenVariant, mdiEmail, mdiTwitter, mdiGithub } from '@mdi/js'
-
-export default {
-  props: {
-    source: String
-  },
-  data: () => ({
-    drawer: null,
-    mdiHome: mdiHome,
-    mdiAccount: mdiAccount,
-    mdiBookOpenVariant: mdiBookOpenVariant,
-    mdiEmail: mdiEmail,
-    mdiTwitter: mdiTwitter,
-    mdiGithub: mdiGithub
-  })
+<style>
+header{
+  overflow: hidden;
+  margin: 0;
+  padding: 15px;
+  list-style-type: none;
+  background-color: #1b2538;
+  color:white;
 }
 
-</script>
+footer{
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 15px;
+  list-style-type: none;
+  background-color: #1b2538;
+  color:white;
+}
 
-<style>
-#inspire {
-  margin-left: 20px;
-  margin-right: 20px;
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.menu {
+  display: block;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  margin: 0px auto;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  background-color: #1b2538;
+  margin-bottom: 20px;
+}
+.menu div.menubar {
+  width: 30px;
+  margin: 17px auto;
+}
+.menu div.menubar .bar {
+  display: block;
+  width: 100%;
+  height: 5px;
+  margin-top: 3px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.menu ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  text-align: center;
+  opacity: 0;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li a {
+  display: inline-block;
+  padding: 0.7em 0.5em;
+  -webkit-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
+  text-decoration: none;
+  color: #1b2538;
+  border-bottom: 4px solid transparent;
+  height: 56px;
+  line-height: 2em;
+}
+.menu ul li a:hover {
+  color: #ffffff;
+  background-color: #1b2538;
+}
+.menu ul li a:target {
+  border-bottom-color: #1b2538;
+}
+/* クリックした時の動き */
+#cp_navimenuid {
+  display: none;
+}
+#cp_navimenuid:checked ~ .menu {
+  width: 100%;
+  height: 60px;
+  border: 3px solid #1b2538;
+  border-radius: 5px;
+  background-color: transparent;
+}
+#cp_navimenuid:checked ~ .menu > ul {
+  display: block;
+  opacity: 1;
+}
+#cp_navimenuid:checked ~ .menu > .menubar {
+  display: none;
 }
 
 </style>

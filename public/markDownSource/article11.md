@@ -1,40 +1,35 @@
 # vue-markdown-highlightでシンタックスハイライトを実装した
-　
 
 ## 前提
-***
-　
 
 vue.js
 
 ## 目的
-***
-　
 
 コードに色を付けて見やすくする。
 基本　→　背景：黒、文字色：白
 
 ## やったこと
-***
-　
 
 **・vue-markdown-highlightをインストール**
 
-**・Markdownファイル内に記述したコードを「\```言語(javascript/html/etc...)」で囲む**
+**・Markdownファイル内に記述したコードを「```言語(javascript/html/etc...)」で囲む**
 
 **・VuetifyのCSSを上書き**
 
-## vue-markdown-highlightをインストール
-***
+### vue-markdown-highlightをインストール
 　
-
 まず、以下のコマンドでhighlight.jsをインストール
 
-<kbd>$ npm i highlight.js</kbd>
+```
+$ npm i highlight.js
+```
 
 その後、以下のコマンドでvue-markdown-highlightをインストール
 
-<kbd>$ npm i vue-markdown-highlight -D</kbd>
+```
+$ npm i vue-markdown-highlight -D
+```
 
 main.jsに以下を追記
 
@@ -67,9 +62,7 @@ export default {
 
 最初「el: '#md'」を入れなかったため、ハイライトが読み込まず、ハマりました。初歩的なミスでした。
 
-## Markdownファイル内に記述したコードを「\```言語(javascript/html/etc...)」で囲む
-***
-　
+### Markdownファイル内に記述したコードを「\```言語(javascript/html/etc...)」で囲む　
 
 以下のように囲むとシンタックスハイライトが適用され、色が変わります。(\は消してね。)
 
@@ -102,9 +95,7 @@ pre {
 \```
 ```
 
-## VuetifyのCSSを上書き
-***
-　
+### VuetifyのCSSを上書き
 
 ここでかなりハマりました。
 

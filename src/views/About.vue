@@ -1,14 +1,9 @@
 <template>
 <div id="about">
-    <h2>Profile</h2><br>
-    <v-avatar size="164">
-      <img
-        src="../assets/profile.png"
-        alt="profile"
-      >
-    </v-avatar><br><br>
-
 <center>
+    <h2>Profile</h2><br>
+<div class="circle-image">
+</div>
 <table border="1">
 <tr>
 <td>名前</td>
@@ -28,13 +23,17 @@
 </tr>
 </table>
 </center>
-
 </div>
 </template>
 <style>
 
-#about {
-  text-align: center;
+.circle-image {
+    background-image: url("../assets/profile.png");  /* 表示する画像 */
+    width:  180px;       /* ※縦横を同値に */
+    height: 180px;       /* ※縦横を同値に */
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    background-position: left top;  /* 横長画像の左上を基準に表示 */
+    display: inline-block;
 }
 
 </style>

@@ -26,21 +26,15 @@ export default {
 </script>
 
 <style>
+#md {
+  margin: 20px;
+}
+
 #md img {
     border: 5px solid green;
     max-width: 100%;
-}
-
-#md h1 {
-    padding: 0.3em;
-    color: #333;
-    background: #dae5f3;
-    border-bottom: solid 3px #455586;
-}
-
-.v-application code {
-    background: #25292f;
-    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 pre {
@@ -50,6 +44,31 @@ pre {
     background: #25292f; /* 背景色 */
     color: #fff;
 }
+
+#md h1 {
+    padding: 1rem 2rem;
+    border-left: 4px solid #000;
+    margin-bottom: 5px;
+    background: #f4f4f4;
+  }
+
+  #md h2 {
+    border-bottom: 3px solid #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+#md h3 {
+    border-bottom: 6px double #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #md h4 {
+    border-bottom: 2px solid #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
 /*
 
@@ -61,7 +80,7 @@ Style with support for rainbow parens
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #474949;
+  background: #25292f;
   color: #d1d9e1;
 }
 

@@ -1,36 +1,19 @@
 # vue.jsとnetlifyでblog作成
-　
-
 ## 目的
-***
-　
-
 技術ブログ作成し、やったことを残しておくため
 
 ## 使ったもの
-***
-　
-
 PC：MacBookPro 13インチ メモリ8GB
 
 エディタ：Visual Studio Code(ターミナルも使えて便利)
 
 ## やったこと
-***
-　
-
 **・vue.jsとgithubの連携**
 
 **・githubとnetlifyの連携**
 
-## ■vue.jsとgithubの連携
-***
-　
-
-### ▼githubの登録、リポジトリの作成
-***
-　
-
+### vue.jsとgithubの連携
+#### githubの登録、リポジトリの作成
 githubとググって、登録
 
 ![NewRepositories](./img/article1/NewRepositories.png)
@@ -41,23 +24,22 @@ githubとググって、登録
 
 「Repository name」に好きな名前を入れて、「Create repository」をクリックすれば完了
 
-### ▼公開鍵・秘密鍵の作成
-***
-　
-
+#### 公開鍵・秘密鍵の作成
 **鍵を入れるフォルダへ移動**
 
-<kbd>$ cd ~/.ssh</kbd>
+```
+$ cd ~/.ssh
+```
 
 **鍵を生成**
 
-<kbd>$ ssh-keygen -t rsa</kbd> (質問されるが、全てEnter)
+```
+$ ssh-keygen -t rsa
+/* 質問されるが、全てEnter */
+```
 
-### ▼公開鍵をGitHubにアップ
-***
-　
-
-[https://github.com/settings/ssh](https://github.com/settings/ssh)
+#### 公開鍵をGitHubにアップ
+<a href="https://github.com/settings/ssh" target="_blank">https://github.com/settings/ssh</a>
 
 上記ページで公開鍵の設定が可能。（GitHubに登録してある必要あり）
 
@@ -71,52 +53,64 @@ githubとググって、登録
 
 「key」には以下のコマンドでコピーしたものを貼り付ける
 
-<kbd>$ pbcopy &lt; ~/.ssh/id_rsa.pub</kbd>
+```
+$ pbcopy < ~/.ssh/id_rsa.pub
+```
 
 **接続確認**
 
-<kbd>$ ssh -T `git@github.com`</kbd>
+```
+$ ssh -T git@github.com
+```
 
 以下のように表示されたら接続完了
-
 You've successfully authenticated, but GitHub does not provide shell access.
 
-### ▼githubへpushする方法
-***
-　
-
+#### githubへpushする方法
 **作業ディレクトリをgithubで管理するためのコマンド**
 
-<kbd>$ git init</kbd>
+```
+$ git init
+```
 
 **作業ディレクトリ→ステージングエリア**
 
-<kbd>$ git add ファイル名</kbd>
+```
+$ git add ファイル名
+```
 
-<kbd>$ git add -A</kbd> (作業ツリー内全て)
+```
+$ git add -A
+/* 作業ツリー内全て */
+```
 
 **ステージングエリア→ローカルリポジトリ**
 
-<kbd>$ git commit -m "コミットメッセージ"</kbd>
+```
+$ git commit -m "コミットメッセージ"
+```
 
 **ローカルリポジトリ→リモートリポジトリ**
 
-<kbd>$ git push</kbd>
+```
+$ git push
+```
 
 **※初めてリモートリポジトリにpushする場合は、以下のコマンド**
 
-<kbd>$ git remote add origin `git@github.com`:[githubID]]/[リポジトリ名]</kbd>
+```
+$ git remote add origin git@github.com:[githubID]]/[リポジトリ名]
+```
 
 以下の「Code」で確認可能
 
 ![githubCode](./img/article1/githubCode.png)
 
-<kbd>$ git push -u origin master</kbd>
+```
+$ git push -u origin master
+```
 
-## ■githubとnetlifyの連携
-***
-　
-
+### githubとnetlifyの連携
 netlifyとググって、githubでログイン
 
 ![NewSiteFromGit](./img/article1/NewSiteFromGit.png)
@@ -145,6 +139,5 @@ URLをクリックするとサイトが表示されます
 
 ※上記画像は、名前.comでドメインを取得し、設定済み
 
-[お名前.comで取得したドメインを、Netlify に設定する方法](https://note.com/koushikagawa/n/n407cde93bdca)
-
+<a href="https://note.com/koushikagawa/n/n407cde93bdca" target="_blank">お名前.comで取得したドメインを、Netlify に設定する方法</a><br>
 以上

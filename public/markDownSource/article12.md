@@ -1,38 +1,20 @@
 # vue.jsでじゃんけんゲームを作ってみた
-　
 
 ## 前提
-***
-　
-
 vue.js 2.x
 
 ## 目的
-***
-　
-
 vue.jsの理解を深めるため。
 
 ## 完成物
-***
-　
-
-[https://objective-jepsen-153d71.netlify.app/](https://objective-jepsen-153d71.netlify.app/)
+<a href="https://objective-jepsen-153d71.netlify.app/" target="_blank">https://objective-jepsen-153d71.netlify.app/</a>
 
 ## 参考サイト
-***
-　
-
-１．[https://www.actzero.jp/developer/report-19774.html](https://www.actzero.jp/developer/report-19774.html)
-
-２．[https://qiita.com/Mitsuzara/items/fccdb17ba14c0c9be20c](https://qiita.com/Mitsuzara/items/fccdb17ba14c0c9be20c)
+１．<a href="https://www.actzero.jp/developer/report-19774.html" target="_blank">https://www.actzero.jp/developer/report-19774.html</a>
+２．<a href="https://qiita.com/Mitsuzara/items/fccdb17ba14c0c9be20c" target="_blank">https://qiita.com/Mitsuzara/items/fccdb17ba14c0c9be20c</a>
 
 ## 完成コード
-***
-　
-
-各説明は、コード内に書いています。
-
+各説明は、コード内に書いています。<br />
 **Game.vue**
 ```html
 <template>

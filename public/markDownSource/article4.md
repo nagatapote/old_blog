@@ -1,52 +1,25 @@
 # vue.jsとfirebaseで認証機能実装
-　
-
 ## やってみたこと
-***
-　
-
 vue.jsとfirebaseで認証機能を実装してみた
 
 ## 理由
-***
-　
-
 会社で認証関係の仕事をしているので、気になってやってみた
 
 ## 前提
-***
-　
-
 vue.jsをインストールしている
-
 firebaseに登録し、プロジェクトを作成している
 
 ## 完成物
-***
-　
+<a href="https://dazzling-hawking-9f2edf.netlify.app" target="_blank">https://dazzling-hawking-9f2edf.netlify.app</a>
 
-[https://dazzling-hawking-9f2edf.netlify.app](https://dazzling-hawking-9f2edf.netlify.app)
-
-## ■手順
-***
-　
-
-### ▼firebase設定
-***
-　
-
+## 手順
+### firebase設定
 ![Authentication](./img/article4/Authentication.png)
-
 プロジェクトの左メニューバーの「Authentication」をクリック。
-
 ![Authentication](./img/article4/Authentication01.png)
-
 「Sign-in method」の「メール/パスワード」を「有効」にします。
 
-### ▼設定（src/main.jsに追記）
-***
-　
-
+### 設定（src/main.jsに追記）
 ```javascript
 import firebase from 'firebase'
 
@@ -67,10 +40,7 @@ firebase.initializeApp(config);
 
 ![Authentication](./img/article4/Authentication02.png)
 
-### ▼登録画面（src/components/signup.vue）
-***
-　
-
+### 登録画面（src/components/signup.vue）
 ```javascript
 <template>
  <div class="signup">
@@ -118,10 +88,7 @@ methods: {
 
 ![Authentication](./img/article4/Authentication03.png)
 
-### ▼ログイン画面（src/components/signin.vue）
-***
-　
-
+### ログイン画面（src/components/signin.vue）
 ```javascript
 <template>
     <div class="signin">
@@ -166,9 +133,7 @@ methods: {
 </script>
 ```
 
-### ▼ログイン成功画面（src/components/success.vue）
-***
-　
+### ログイン成功画面（src/components/success.vue）
 
 ```javascript
 <template>
@@ -201,9 +166,6 @@ export default {
 ```
 
 ### ▼ログイン成功画面へ直接アクセスできないようにする設定
-***
-　
-
 /src/router/index.jsに以下を追記する
 
 ```javascript
