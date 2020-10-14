@@ -38,7 +38,7 @@ export default {
     margin-bottom: 10px;
 }
 
-#pre {
+pre {
     margin: 1em 0; /* ブロック前後の余白 */
     padding: 1em; /* ブロック内の余白 */
     border-radius: 5px; /* 角丸 */
@@ -50,7 +50,6 @@ export default {
     padding: 1rem 2rem;
     border-left: 4px solid #000;
     margin-bottom: 5px;
-    background: #f4f4f4;
   }
 
 #md h2 {
