@@ -1,7 +1,6 @@
 <template>
 <div>
 <header>
-<h1>pote's blog</h1>
 <ul class="topnav">
   <li><router-link to="/">Home</router-link></li>
   <li><router-link to="/About">Profile</router-link></li>
@@ -20,7 +19,7 @@
 
 <style>
 body{
-  padding-top: 140px;
+  padding-top: 40px;
   padding-bottom: 75px
 }
 header{
