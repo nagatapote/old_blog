@@ -4,13 +4,11 @@
   </div>
 </template>
 
-<script rel="preload">
-import VueMarkdown from 'vue-markdown'
-
+<script>
 export default {
   el: '#md',
   components: {
-    VueMarkdown
+    VueMarkdown: () => import('vue-markdown')
   },
   data () {
     return { source: '' }
