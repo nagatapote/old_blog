@@ -1,10 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import axios from 'axios'
-import Highlight from 'vue-markdown-highlight'
 
-Vue.prototype.$axios = axios
-Vue.use(Highlight)
 Vue.use(VueRouter)
 
 const routes = [
