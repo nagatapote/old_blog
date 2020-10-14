@@ -27,18 +27,18 @@ export default {
 </script>
 
 <style>
-.md {
+#md {
   margin: 20px;
 }
 
-.md img {
+#md img {
     border: 5px solid green;
     max-width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.pre {
+#pre {
     margin: 1em 0; /* ブロック前後の余白 */
     padding: 1em; /* ブロック内の余白 */
     border-radius: 5px; /* 角丸 */
@@ -46,26 +46,26 @@ export default {
     color: #fff;
 }
 
-.md h1 {
+#md h1 {
     padding: 1rem 2rem;
     border-left: 4px solid #000;
     margin-bottom: 5px;
     background: #f4f4f4;
   }
 
-.md h2 {
+#md h2 {
     border-bottom: 3px solid #000;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
-.md h3 {
+#md h3 {
     border-bottom: 6px double #000;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
-  .md h4 {
+#md h4 {
     border-bottom: 2px solid #000;
     margin-top: 10px;
     margin-bottom: 10px;
