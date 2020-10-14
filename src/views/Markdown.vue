@@ -10,8 +10,8 @@ import VueMarkdown from 'vue-markdown'
 import axios from 'axios'
 import Highlight from 'vue-markdown-highlight'
 
-Vue.use(Highlight)
 Vue.prototype.$axios = axios
+Vue.use(Highlight)
 
 export default {
   el: '#md',
@@ -19,15 +19,16 @@ export default {
     VueMarkdown
   },
   data () {
-    return { source: '' }
+    return {
+      source: ''
+    }
   },
-  mounted: function () {
+  mounted () {
     /* publicフォルダに置いたmdファイルを取得する */
     this.$axios
       .get(`./markDownSource/${this.$route.params.id}.md`)
       .then(response => (this.source = response.data))
   }
-
 }
 </script>
 
