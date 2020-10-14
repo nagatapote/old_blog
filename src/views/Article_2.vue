@@ -48,7 +48,7 @@
 <article class="card">
   <img class="card__img" src="../assets/article/article6.jpg" decoding="async">
   <div class="card__meta">
-    <p class="card__cat">node.js</p>
+    <p class="card__cat">vue.js</p>
     <time class="card__time" datetime="2020-09-30">2020.09.30</time>
   </div>
   <h2 class="card__ttl">core-jsモジュールエラー</h2>
@@ -61,7 +61,7 @@
 <article class="card">
   <img class="card__img" src="../assets/article/article5.jpg" decoding="async">
   <div class="card__meta">
-    <p class="card__cat">node.js</p>
+    <p class="card__cat">vue.js</p>
     <time class="card__time" datetime="2020-09-29">2020.09.29</time>
   </div>
   <h2 class="card__ttl">Vuetifyの導入方法</h2>
@@ -74,7 +74,7 @@
 <article class="card">
   <img class="card__img" src="../assets/article/article4.jpg" decoding="async">
   <div class="card__meta">
-    <p class="card__cat">node.js</p>
+    <p class="card__cat">vue.js</p>
     <time class="card__time" datetime="2020-09-27">2020.09.27</time>
   </div>
   <h2 class="card__ttl">vue.jsとfirebaseで認証機能実装</h2>
@@ -87,7 +87,7 @@
 <article class="card">
   <img class="card__img" src="../assets/article/article3.jpg" decoding="async">
   <div class="card__meta">
-    <p class="card__cat">node.js</p>
+    <p class="card__cat">vue.js</p>
     <time class="card__time" datetime="2020-09-27">2020.09.27</time>
   </div>
   <h2 class="card__ttl">SPAの「/」以外でリロードすると404エラーになる</h2>
@@ -100,7 +100,7 @@
 <article class="card">
   <img class="card__img" src="../assets/article/article2.jpg" decoding="async">
   <div class="card__meta">
-    <p class="card__cat">node.js</p>
+    <p class="card__cat">vue.js</p>
     <time class="card__time" datetime="2020-09-24">2020.09.24</time>
   </div>
   <h2 class="card__ttl">リモートリポジトリ内を別のプロジェクトで上書き</h2>
@@ -113,7 +113,7 @@
 <article class="card">
   <img class="card__img" src="../assets/article/article1.jpg" decoding="async">
   <div class="card__meta">
-    <p class="card__cat">node.js</p>
+    <p class="card__cat">vue.js</p>
     <time class="card__time" datetime="2020-09-22">2020.09.22</time>
   </div>
   <h2 class="card__ttl">vue.jsとnetlifyでブログ作成</h2>

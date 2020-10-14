@@ -2,7 +2,8 @@
 <div id="about">
 <center>
     <h1>Profile</h1>
-<div class="circle-image">
+<div>
+    <img src="../assets/profile.png" decoding="async">
 </div>
 <table border="1">
 <tr>
@@ -25,13 +26,6 @@
 </center>
 </div>
 </template>
+
 <style>
-.circle-image {
-    background-image: url("../assets/profile.png");
-    width:  160px;
-    height: 160px;
-    border-radius: 50%;
-    background-position: left top;
-    display: inline-block
-}
 </style>
