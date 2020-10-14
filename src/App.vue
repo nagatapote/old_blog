@@ -5,9 +5,7 @@
 <input type="checkbox" id="cp_navimenuid">
 <label class="menu" for="cp_navimenuid">
 <div class="menubar">
-  <span class="bar"></span>
-  <span class="bar"></span>
-  <span class="bar"></span>
+Menu
 </div>
 
 <ul>
@@ -67,29 +65,22 @@ footer{
 .menu {
   display: block;
   overflow: hidden;
-  width: 60px;
-  height: 60px;
+  width: 150px;
+  height: 30px;
   margin: 0px auto;
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
           transition: all 0.5s ease-in-out;
   border: 3px solid transparent;
-  border-radius: 50%;
   background-color: #1b2538;
   margin-bottom: 0px;
 }
-.menu div.menubar {
-  width: 30px;
-  margin: 17px auto;
+
+.menubar{
+  color: white;
+  text-align: center;
 }
-.menu div.menubar .bar {
-  display: block;
-  width: 100%;
-  height: 5px;
-  margin-top: 3px;
-  border-radius: 2px;
-  background-color: #ffffff;
-}
+
 .menu ul {
   display: none;
   margin: 0;
