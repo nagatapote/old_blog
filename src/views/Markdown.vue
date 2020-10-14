@@ -50,6 +50,7 @@ pre {
     padding: 1rem 2rem;
     border-left: 4px solid #000;
     margin-bottom: 5px;
+    background: #f4f4f4;
   }
 
 #md h2 {
