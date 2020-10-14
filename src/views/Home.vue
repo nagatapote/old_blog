@@ -1,6 +1,10 @@
 <template>
 <div id="home">
-        <p style="white-space:pre-wrap; word-wrap:break-word;">{{ message }}</p>
+  <center>
+  <h1>pote's blog</h1>
+  <h2>〜技術ブログ〜</h2>
+  <p style="white-space:pre-wrap; word-wrap:break-word;">{{ message }}</p>
+  </center>
   </div>
 </template>
 
