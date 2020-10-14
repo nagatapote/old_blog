@@ -144,7 +144,7 @@
 }
 
 .card{
-  width: 400px;
+  width: 350px;
   height: auto;
 }
 
