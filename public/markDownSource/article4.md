@@ -14,9 +14,9 @@ firebaseに登録し、プロジェクトを作成している
 
 ## 手順
 ### firebase設定
-![Authentication](./img/article4/Authentication.png)
+<img src="./img/article4/Authentication.png" decoding="async">
 プロジェクトの左メニューバーの「Authentication」をクリック。
-![Authentication](./img/article4/Authentication01.png)
+<img src="./img/article4/Authentication01.png" decoding="async">
 「Sign-in method」の「メール/パスワード」を「有効」にします。
 
 ### 設定（src/main.jsに追記）
@@ -38,7 +38,7 @@ firebase.initializeApp(config);
 
 中身は、firebaseの以下の場所から確認することができます。
 
-![Authentication](./img/article4/Authentication02.png)
+<img src="./img/article4/Authentication02.png" decoding="async">
 
 ### 登録画面（src/components/signup.vue）
 ```javascript
@@ -86,7 +86,7 @@ methods: {
 
 ここに登録があるユーザのみログイン可能となります。
 
-![Authentication](./img/article4/Authentication03.png)
+<img src="./img/article4/Authentication03.png" decoding="async">
 
 ### ログイン画面（src/components/signin.vue）
 ```javascript

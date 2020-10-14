@@ -6,131 +6,122 @@
 <router-link class="btn-square" to="/Article_1">1</router-link>&nbsp;
 <router-link class="btn-square" to="/Article_2">2</router-link><br /><br />
 
-<div class="card card-skin">
-  <div class="card__imgframe9"></div>
-  <div class="card__textbox">
-    <div class="card__titletext">
-      VueRouterで画面遷移時のスクロール位置制御
-    </div>
-    <div class="card__overviewtext">
-      【vue.js】2020/10/06
-    </div>
-    <router-link class="btn-square" to="/article9">Read more</router-link>
+<article class="card">
+  <img class="card__img" src="../assets/article/article9.jpg" decoding="async">
+  <div class="card__meta">
+    <p class="card__cat">vue.js</p>
+    <time class="card__time" datetime="2020-10-06">2020.10.06</time>
   </div>
-</div>
-<br><br>
+  <h2 class="card__ttl">VueRouterで画面遷移時のスクロール位置制御</h2>
+  <p class="card__desc">
+  <router-link class="btn-square" to="/article9">Read more</router-link>
+  </p>
+</article>
+<br />
 
-<div class="card card-skin">
-  <div class="card__imgframe8"></div>
-  <div class="card__textbox">
-    <div class="card__titletext">
-      vue.config.jsからページタイトルを設定する方法
-    </div>
-    <div class="card__overviewtext">
-      【vue.js】2020/10/05
-    </div>
-    <router-link class="btn-square" to="/article8">Read more</router-link>
+<article class="card">
+  <img class="card__img" src="../assets/article/article8.jpg" decoding="async">
+  <div class="card__meta">
+    <p class="card__cat">vue.js</p>
+    <time class="card__time" datetime="2020-10-05">2020.10.05</time>
   </div>
-</div>
-<br><br>
+  <h2 class="card__ttl">vue.config.jsからページタイトルを設定する方法</h2>
+  <p class="card__desc">
+  <router-link class="btn-square" to="/article8">Read more</router-link>
+  </p>
+</article>
+<br />
 
-<div class="card card-skin">
-  <div class="card__imgframe7"></div>
-  <div class="card__textbox">
-    <div class="card__titletext">
-      nodebrewでnodeのバージョン管理
-    </div>
-    <div class="card__overviewtext">
-      【node.js】2020/10/03
-    </div>
-    <router-link class="btn-square" to="/article7">Read more</router-link>
+<article class="card">
+  <img class="card__img" src="../assets/article/article7.jpg" decoding="async">
+  <div class="card__meta">
+    <p class="card__cat">node.js</p>
+    <time class="card__time" datetime="2020-10-03">2020.10.03</time>
   </div>
-</div>
-<br><br>
+  <h2 class="card__ttl">nodebrewでnodeのバージョン管理</h2>
+  <p class="card__desc">
+  <router-link class="btn-square" to="/article7">Read more</router-link>
+  </p>
+</article>
+<br />
 
-<div class="card card-skin">
-  <div class="card__imgframe6"></div>
-  <div class="card__textbox">
-    <div class="card__titletext">
-      core-jsモジュールエラー
-    </div>
-    <div class="card__overviewtext">
-      【vue.js】2020/09/30
-    </div>
-    <router-link class="btn-square" to="/article6">Read more</router-link>
+<article class="card">
+  <img class="card__img" src="../assets/article/article6.jpg" decoding="async">
+  <div class="card__meta">
+    <p class="card__cat">node.js</p>
+    <time class="card__time" datetime="2020-09-30">2020.09.30</time>
   </div>
-</div>
-<br><br>
+  <h2 class="card__ttl">core-jsモジュールエラー</h2>
+  <p class="card__desc">
+  <router-link class="btn-square" to="/article6">Read more</router-link>
+  </p>
+</article>
+<br />
 
-<div class="card card-skin">
-  <div class="card__imgframe5"></div>
-  <div class="card__textbox">
-    <div class="card__titletext">
-      Vuetifyの導入方法
-    </div>
-    <div class="card__overviewtext">
-      【vue.js】2020/09/29
-    </div>
-    <router-link class="btn-square" to="/article5">Read more</router-link>
+<article class="card">
+  <img class="card__img" src="../assets/article/article5.jpg" decoding="async">
+  <div class="card__meta">
+    <p class="card__cat">node.js</p>
+    <time class="card__time" datetime="2020-09-29">2020.09.29</time>
   </div>
-</div>
-<br><br>
+  <h2 class="card__ttl">Vuetifyの導入方法</h2>
+  <p class="card__desc">
+  <router-link class="btn-square" to="/article5">Read more</router-link>
+  </p>
+</article>
+<br />
 
-<div class="card card-skin">
-  <div class="card__imgframe4"></div>
-  <div class="card__textbox">
-    <div class="card__titletext">
-      vue.jsとfirebaseで認証機能実装
-    </div>
-    <div class="card__overviewtext">
-      【vue.js】2020/09/27
-    </div>
-    <router-link class="btn-square" to="/article4">Read more</router-link>
+<article class="card">
+  <img class="card__img" src="../assets/article/article4.jpg" decoding="async">
+  <div class="card__meta">
+    <p class="card__cat">node.js</p>
+    <time class="card__time" datetime="2020-09-27">2020.09.27</time>
   </div>
-</div>
-<br><br>
+  <h2 class="card__ttl">vue.jsとfirebaseで認証機能実装</h2>
+  <p class="card__desc">
+  <router-link class="btn-square" to="/article4">Read more</router-link>
+  </p>
+</article>
+<br />
 
-<div class="card card-skin">
-  <div class="card__imgframe3"></div>
-  <div class="card__textbox">
-    <div class="card__titletext">
-      SPAの「/」以外でリロードすると404エラーになる
-    </div>
-    <div class="card__overviewtext">
-      【vue.js】2020/09/27
-    </div>
-    <router-link class="btn-square" to="/article3">Read more</router-link>
+<article class="card">
+  <img class="card__img" src="../assets/article/article3.jpg" decoding="async">
+  <div class="card__meta">
+    <p class="card__cat">node.js</p>
+    <time class="card__time" datetime="2020-09-27">2020.09.27</time>
   </div>
-</div>
-<br><br>
+  <h2 class="card__ttl">SPAの「/」以外でリロードすると404エラーになる</h2>
+  <p class="card__desc">
+  <router-link class="btn-square" to="/article3">Read more</router-link>
+  </p>
+</article>
+<br />
 
-<div class="card card-skin">
-  <div class="card__imgframe2"></div>
-  <div class="card__textbox">
-    <div class="card__titletext">
-      リモートリポジトリ内を別のプロジェクトで上書き
-    </div>
-    <div class="card__overviewtext">
-      【vue.js】2020/09/24
-    </div>
-    <router-link class="btn-square" to="/article2">Read more</router-link>
+<article class="card">
+  <img class="card__img" src="../assets/article/article2.jpg" decoding="async">
+  <div class="card__meta">
+    <p class="card__cat">node.js</p>
+    <time class="card__time" datetime="2020-09-24">2020.09.24</time>
   </div>
-</div>
-<br><br>
+  <h2 class="card__ttl">リモートリポジトリ内を別のプロジェクトで上書き</h2>
+  <p class="card__desc">
+  <router-link class="btn-square" to="/article2">Read more</router-link>
+  </p>
+</article>
+<br />
 
-<div class="card card-skin">
-  <div class="card__imgframe1"></div>
-  <div class="card__textbox">
-    <div class="card__titletext">
-      vue.jsとnetlifyでブログ作成
-    </div>
-    <div class="card__overviewtext">
-      【vue.js】2020/09/22
-    </div>
-    <router-link class="btn-square" to="/article1">Read more</router-link>
+<article class="card">
+  <img class="card__img" src="../assets/article/article1.jpg" decoding="async">
+  <div class="card__meta">
+    <p class="card__cat">node.js</p>
+    <time class="card__time" datetime="2020-09-22">2020.09.22</time>
   </div>
-</div>
-<br><br>
+  <h2 class="card__ttl">vue.jsとnetlifyでブログ作成</h2>
+  <p class="card__desc">
+  <router-link class="btn-square" to="/article1">Read more</router-link>
+  </p>
+</article>
+<br />
 
 <router-link class="btn-square" to="/Article_1">1</router-link>&nbsp;
 <router-link class="btn-square" to="/Article_2">2</router-link><br /><br />
@@ -139,109 +130,49 @@
 </template>
 
 <style>
-.card-skin{
-  box-shadow: 2px 2px 6px rgba(0,0,0,.4)
-}
-.card{
+.card {
   width: 350px;
-  height: auto
+  margin: 0 auto;
+  padding: 12px;
+  border: 1px solid #ccc;
+  background: #fff
 }
-.card__imgframe9{
-  width: 100%;
-  height: auto;
-  padding-top: 56.25%;
-  background: url(../assets/article/article9.jpg) no-repeat center;
-  background-size: cover;
-  box-sizing: border-box
+.card__img {
+  width: 100%
 }
-.card__imgframe8{
-  width: 100%;
-  height: auto;
-  padding-top: 56.25%;
-  background: url(../assets/article/article8.jpg) no-repeat center;
-  background-size: cover;
-  box-sizing: border-box
+.card__meta {
+  display: flex;
+  align-items: center
 }
-.card__imgframe7{
-  width: 100%;
-  height: auto;
-  padding-top: 56.25%;
-  background: url(../assets/article/article7.jpg) no-repeat center;
-  background-size: cover;
-  box-sizing: border-box
-}
-.card__imgframe6{
-  width: 100%;
-  height: auto;
-  padding-top: 56.25%;
-  background: url(../assets/article/article6.jpg) no-repeat center;
-  background-size: cover;
-  box-sizing: border-box
-}
-.card__imgframe5{
-  width: 100%;
-  height: auto;
-  padding-top: 56.25%;
-  background: url(../assets/article/article5.jpg) no-repeat center;
-  background-size: cover;
-  box-sizing: border-box
-}
-.card__imgframe4{
-  width: 100%;
-  height: auto;
-  padding-top: 56.25%;
-  background: url(../assets/article/article4.jpg) no-repeat center;
-  background-size: cover;
-  box-sizing: border-box
-}
-.card__imgframe3{
-  width: 100%;
-  height: auto;
-  padding-top: 56.25%;
-  background: url(../assets/article/article3.jpg) no-repeat center;
-  background-size: cover;
-  box-sizing: border-box
-}
-.card__imgframe2{
-  width: 100%;
-  height: auto;
-  padding-top: 56.25%;
-  background: url(../assets/article/article2.jpg) no-repeat center;
-  background-size: cover;
-  box-sizing: border-box
-}
-.card__imgframe1{
-  width: 100%;
-  height: auto;
-  padding-top: 56.25%;
-  background: url(../assets/article/article1.jpg) no-repeat center;
-  background-size: cover;
-  box-sizing: border-box
-}
-.card__textbox{
-  width: 100%;
-  height: auto;
-  padding: 20px 18px;
-  background: #ffffff;
-  box-sizing: border-box
-}
-.card__textbox > * + *{
-  margin-top: 10px
-}
-.card__titletext{
-  font-size: 20px;
+.card__cat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  background: #ffb300;
+  color: #fff;
   font-weight: bold;
-  line-height: 125%
+  letter-spacing: 1px;
+  font-size: 14px
 }
-.card__overviewtext{
+.card__time {
+  margin: 0 0 0 auto;
   font-size: 12px;
-  line-height: 150%
+  color: #666
 }
+.card__ttl {
+  font-size: 20px;
+  margin: 0
+}
+.card__desc {
+  font-size: 16px
+}
+
 .btn-square {
   display: inline-block;
   padding: 0.5em 1em;
   text-decoration: none;
-  background: #668ad8;/*ボタン色*/
+  background: #668ad8;
   color: #FFF;
   border-bottom: solid 4px #627295;
   border-radius: 3px
