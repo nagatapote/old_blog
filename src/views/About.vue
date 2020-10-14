@@ -20,7 +20,12 @@
 </tr>
 <tr>
 <td>目標</td>
-<td>SIDE FIRE</td>
+<td>サイドFIRE</td>
+</tr>
+<tr>
+<td>SNS</td>
+<td><a target="_blank" href="https://twitter.com/pote_nagata">Twitter</a>&nbsp;
+<a target="_blank" href="https://github.com/nagatapote">Github</a></td>
 </tr>
 </table>
 </center>

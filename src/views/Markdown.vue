@@ -4,34 +4,6 @@
   </div>
 </template>
 
-<script>
-import Vue from 'vue'
-import VueMarkdown from 'vue-markdown'
-import axios from 'axios'
-import Highlight from 'vue-markdown-highlight'
-
-Vue.prototype.$axios = axios
-Vue.use(Highlight)
-
-export default {
-  el: '#md',
-  components: {
-    VueMarkdown
-  },
-  data () {
-    return {
-      source: ''
-    }
-  },
-  created () {
-    /* publicフォルダに置いたmdファイルを取得する */
-    this.$axios
-      .get(`./markDownSource/${this.$route.params.id}.md`)
-      .then(response => (this.source = response.data))
-  }
-}
-</script>
-
 <style>
 #md {
   margin: 20px
@@ -160,3 +132,31 @@ Style with support for rainbow parens
 }
 
 </style>
+
+<script>
+import Vue from 'vue'
+import VueMarkdown from 'vue-markdown'
+import axios from 'axios'
+import Highlight from 'vue-markdown-highlight'
+
+Vue.prototype.$axios = axios
+Vue.use(Highlight)
+
+export default {
+  el: '#md',
+  components: {
+    VueMarkdown
+  },
+  data () {
+    return {
+      source: ''
+    }
+  },
+  created () {
+    /* publicフォルダに置いたmdファイルを取得する */
+    this.$axios
+      .get(`./markDownSource/${this.$route.params.id}.md`)
+      .then(response => (this.source = response.data))
+  }
+}
+</script>
