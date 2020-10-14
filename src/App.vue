@@ -2,10 +2,8 @@
 <div>
 <header>
   <h1>pote's blog</h1>
-</header>
 <input type="checkbox" id="cp_navimenuid">
 <label class="menu" for="cp_navimenuid">
-
 <div class="menubar">
   <span class="bar"></span>
   <span class="bar"></span>
@@ -21,6 +19,7 @@
   <li><a target="_blank" href="https://github.com/nagatapote">Github</a></li>
 </ul>
 </label>
+</header>
 <router-view />
 <footer>
 &copy; 2020 pote's blog
@@ -29,13 +28,22 @@
 </template>
 
 <style>
+body{
+  padding-top: 160px;
+  padding-bottom: 75px;
+}
+
 header{
   overflow: hidden;
   margin: 0;
-  padding: 15px;
+  padding: 10px;
   list-style-type: none;
-  background-color: #1b2538;
-  color:white;
+  background-color: white;
+  color:#1b2538;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10000;
 }
 
 footer{
@@ -45,12 +53,17 @@ footer{
   list-style-type: none;
   background-color: #1b2538;
   color:white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 10000;
 }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
 .menu {
   display: block;
   overflow: hidden;
@@ -63,7 +76,7 @@ footer{
   border: 3px solid transparent;
   border-radius: 50%;
   background-color: #1b2538;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .menu div.menubar {
   width: 30px;

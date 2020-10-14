@@ -1,7 +1,7 @@
 <template>
 <center>
   <div id="article_1">
-    <h2>Article</h2><br/>
+    <h1>Article</h1>
 
 <router-link class="btn-square" to="/Article_1">1</router-link>&nbsp;
 <router-link class="btn-square" to="/Article_2">2</router-link><br /><br />

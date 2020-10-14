@@ -1,9 +1,10 @@
 <template>
+<div>
+<center><h1>Contact</h1></center>
 <div class="Form">
-  <h1>Contact</h1>
   <form name="contact" method="post" netlify data-netlify="true">
   <input type="hidden" name="form-name" value="contact" />
-  <div class="Form-Item">
+   <div class="Form-Item">
     <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
     <input v-model="name" type="text" name="name" class="Form-Item-Input" placeholder="例）山田太郎">
   </div>
@@ -17,6 +18,7 @@
   </div>
   <button :disabled="valid" type="submit" class="Form-Btn">送信する</button>
 </form>
+</div>
 </div>
 </template>
 
@@ -47,7 +49,7 @@ export default {
 
 <style>
 .Form {
-  margin-top: 80px;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
   max-width: 720px;

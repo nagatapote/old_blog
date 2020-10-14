@@ -1,7 +1,7 @@
 <template>
 <div id="about">
 <center>
-    <h2>Profile</h2><br>
+    <h1>Profile</h1>
 <div class="circle-image">
 </div>
 <table border="1">
@@ -29,8 +29,8 @@
 
 .circle-image {
     background-image: url("../assets/profile.png");  /* 表示する画像 */
-    width:  180px;       /* ※縦横を同値に */
-    height: 180px;       /* ※縦横を同値に */
+    width:  160px;       /* ※縦横を同値に */
+    height: 160px;       /* ※縦横を同値に */
     border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
     background-position: left top;  /* 横長画像の左上を基準に表示 */
     display: inline-block;
