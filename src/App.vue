@@ -28,40 +28,28 @@ Menu
 <style>
 body{
   padding-top: 160px;
-  padding-bottom: 75px;
+  padding-bottom: 75px
 }
-
 header{
-  overflow: hidden;
-  margin: 0;
   padding: 10px;
-  list-style-type: none;
-  background-color: white;
-  color:#1b2538;
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 10000;
+  background-color: white
 }
-
 footer{
-  overflow: hidden;
   margin-top: 20px;
   padding: 15px;
-  list-style-type: none;
   background-color: #1b2538;
   color:white;
   position: fixed;
   width: 100%;
-  bottom: 0;
-  z-index: 10000;
+  bottom: 0
 }
-
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+          box-sizing: border-box
 }
-
 .menu {
   display: block;
   overflow: hidden;
@@ -73,26 +61,22 @@ footer{
           transition: all 0.5s ease-in-out;
   border: 3px solid transparent;
   background-color: #1b2538;
-  margin-bottom: 0px;
 }
-
 .menubar{
   color: white;
-  text-align: center;
+  text-align: center
 }
-
 .menu ul {
   display: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
   text-align: center;
-  opacity: 0;
+  opacity: 0
 }
 .menu ul li {
-  display: inline-block;
+  display: inline-block
 }
 .menu ul li a {
   display: inline-block;
@@ -103,32 +87,32 @@ footer{
   color: #1b2538;
   border-bottom: 4px solid transparent;
   height: 56px;
-  line-height: 2em;
+  line-height: 2em
 }
 .menu ul li a:hover {
   color: #ffffff;
-  background-color: #1b2538;
+  background-color: #1b2538
 }
 .menu ul li a:target {
-  border-bottom-color: #1b2538;
+  border-bottom-color: #1b2538
 }
 /* クリックした時の動き */
 #cp_navimenuid {
-  display: none;
+  display: none
 }
 #cp_navimenuid:checked ~ .menu {
   width: 100%;
   height: 60px;
   border: 3px solid #1b2538;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: transparent
 }
 #cp_navimenuid:checked ~ .menu > ul {
   display: block;
-  opacity: 1;
+  opacity: 1
 }
 #cp_navimenuid:checked ~ .menu > .menubar {
-  display: none;
+  display: none
 }
 
 </style>

@@ -26,14 +26,12 @@
 </div>
 </template>
 <style>
-
 .circle-image {
-    background-image: url("../assets/profile.png");  /* 表示する画像 */
-    width:  160px;       /* ※縦横を同値に */
-    height: 160px;       /* ※縦横を同値に */
-    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
-    background-position: left top;  /* 横長画像の左上を基準に表示 */
-    display: inline-block;
+    background-image: url("../assets/profile.png");
+    width:  160px;
+    height: 160px;
+    border-radius: 50%;
+    background-position: left top;
+    display: inline-block
 }
-
 </style>
