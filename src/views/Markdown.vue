@@ -26,7 +26,7 @@ export default {
 }
 </script>
 
-<style link rel=preload>
+<style>
 #md {
   margin: 20px;
 }
