@@ -17,5 +17,6 @@ $ git push
 $ git push -f origin master
 ```
 
-その後、通常通りpush可能になりました<br />
+その後、通常通りpush可能になりました
+
 以上

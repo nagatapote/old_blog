@@ -7,6 +7,7 @@ Vuetifyを導入することで、簡単にいい感じのデザインにする�
 
 ## やったこと
 **・Vuetifyの導入**
+
 **・公式サイトからソースをコピペまたは参考にする**
 
 ### Vuetifyの導入
@@ -35,7 +36,8 @@ $ npm run serve
 ### 公式サイトからソースをコピペまたは参考にする
 以下の公式サイトにアクセスします。
 
-<a href="https://vuetifyjs.com/en/" target="_blank">https://vuetifyjs.com/en/</a><br />
+<a href="https://vuetifyjs.com/en/" target="_blank">https://vuetifyjs.com/en/</a>
+
 左側のメニューや検索で実装したいコンポーネントを探し、右上の＜＞ボタンからコードを確認、コピペすることができます。
 
 <img src="./img/article5/Vuetify01.png" decoding="async">

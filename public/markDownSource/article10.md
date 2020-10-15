@@ -68,7 +68,9 @@ component: () => import('../views/Markdown.vue')
 ```
 
 vueファイルに$route.params.idを記述します。
-以下は完成形となります。<br />
+
+以下は完成形となります。
+
 **Markdown.vue**
 
 ```javascript
@@ -100,7 +102,10 @@ export default {
 </script>
 ```
 
-public/markDownSource配下にMarkdownファイルを配置しています。<br />
+public/markDownSource配下にMarkdownファイルを配置しています。
+
 以下のように、アクセスしたURLと同じ名前のmarkdownファイルを表示します。
-/article1にアクセスした場合に、public/markDownSource/article1.mdを表示。<br />
+
+/article1にアクセスした場合に、public/markDownSource/article1.mdを表示。
+
 以上。

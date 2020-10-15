@@ -5,7 +5,6 @@
   <li><router-link to="/">Home</router-link></li>
   <li><router-link to="/About">Profile</router-link></li>
   <li><router-link to="/Article_1">Article</router-link></li>
-  <li><router-link to="/Form">Contact</router-link></li>
 </ul>
 </header>
 <router-view />
@@ -36,14 +35,6 @@ footer{
   position: fixed;
   width: 100%;
   bottom: 0
-}
-footer a{
-  padding: 10px 10px;
-  text-decoration: none;
-  color: white
-}
-footer a:hover:not(.active) {
-  background-color: #a9bce2
 }
 ul.topnav {
   overflow: hidden;

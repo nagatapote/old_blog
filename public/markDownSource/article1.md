@@ -64,6 +64,7 @@ $ ssh -T git@github.com
 ```
 
 以下のように表示されたら接続完了
+
 You've successfully authenticated, but GitHub does not provide shell access.
 
 #### githubへpushする方法
@@ -139,5 +140,6 @@ URLをクリックするとサイトが表示されます
 
 ※上記画像は、名前.comでドメインを取得し、設定済み
 
-<a href="https://note.com/koushikagawa/n/n407cde93bdca" target="_blank">お名前.comで取得したドメインを、Netlify に設定する方法</a><br>
+<a href="https://note.com/koushikagawa/n/n407cde93bdca" target="_blank">お名前.comで取得したドメインを、Netlify に設定する方法</a>
+
 以上

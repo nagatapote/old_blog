@@ -4,6 +4,51 @@
   </div>
 </template>
 
+<script>
+import Vue from 'vue'
+import VueMarkdown from 'vue-markdown/src/VueMarkdown.js'
+import axios from 'axios'
+import Hljs from 'highlight.js/lib/core.js'
+import javascript from 'highlight.js/lib/languages/javascript'
+import html from 'highlight.js/lib/languages/xml.js'
+import css from 'highlight.js/lib/languages/css.js'
+
+Hljs.registerLanguage('javascript', javascript)
+Hljs.registerLanguage('html', html)
+Hljs.registerLanguage('css', css)
+
+const Highlight = {}
+Highlight.install = function (Vue, options) {
+  Vue.directive('highlight', function (el) {
+    const blocks = el.querySelectorAll('pre code')
+    blocks.forEach((block) => {
+      Hljs.highlightBlock(block)
+    })
+  })
+}
+
+Vue.prototype.$axios = axios
+Vue.use(Highlight)
+
+export default {
+  el: '#md',
+  components: {
+    VueMarkdown
+  },
+  data () {
+    return {
+      source: ''
+    }
+  },
+  created () {
+    /* publicフォルダに置いたmdファイルを取得する */
+    this.$axios
+      .get(`./markDownSource/${this.$route.params.id}.md`)
+      .then(response => (this.source = response.data))
+  }
+}
+</script>
+
 <style>
 #md {
   margin: 20px
@@ -63,7 +108,6 @@ Style with support for rainbow parens
 .hljs-comment,
 .hljs-quote {
   color: #969896;
-  font-style: italic
 }
 
 .hljs-keyword,
@@ -126,37 +170,4 @@ Style with support for rainbow parens
 .hljs-attribute {
   color: #81a2be
 }
-
-.hljs-emphasis {
-  font-style: italic
-}
-
 </style>
-
-<script>
-import Vue from 'vue'
-import VueMarkdown from 'vue-markdown'
-import axios from 'axios'
-import Highlight from 'vue-markdown-highlight'
-
-Vue.prototype.$axios = axios
-Vue.use(Highlight)
-
-export default {
-  el: '#md',
-  components: {
-    VueMarkdown
-  },
-  data () {
-    return {
-      source: ''
-    }
-  },
-  created () {
-    /* publicフォルダに置いたmdファイルを取得する */
-    this.$axios
-      .get(`./markDownSource/${this.$route.params.id}.md`)
-      .then(response => (this.source = response.data))
-  }
-}
-</script>

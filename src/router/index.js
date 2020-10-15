@@ -32,7 +32,7 @@ const routes = [
     path: '/Form',
     name: 'Form',
     component: () => import('../components/Form.vue'),
-    meta: { title: 'pote\'s blog | Form' }
+    meta: { title: 'pote\'s blog | Contact' }
   },
   {
     path: '/:id',

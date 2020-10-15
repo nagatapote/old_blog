@@ -9,8 +9,11 @@ MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
 
 ### homebrewをインストール
 以下の公式サイトへアクセス
-<a href="https://brew.sh/index_ja" target="_blank">https://brew.sh/index_ja</a><br />
+
+<a href="https://brew.sh/index_ja" target="_blank">https://brew.sh/index_ja</a>
+
 公式サイト記載のコマンドでインストール
+
 <img src="./img/article7/homebrew.png" decoding="async">
 
 ### nodebrewをインストール

@@ -1,6 +1,6 @@
 <template>
 <div>
-<center><h1>Contact</h1></center>
+<center><h1>Contact</h1>
 <div class="Form">
   <form name="contact" method="post" netlify data-netlify="true">
   <input type="hidden" name="form-name" value="contact" />
@@ -19,6 +19,7 @@
   <button :disabled="valid" type="submit" class="Form-Btn">送信する</button>
 </form>
 </div>
+</center>
 </div>
 </template>
 
@@ -50,13 +51,13 @@ export default {
 <style>
 .Form {
   margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 720px;
+  margin-left: 0px;
+  margin-right: 40px;
+  max-width: 720px
 }
 @media screen and (max-width: 480px) {
   .Form {
-    margin-top: 40px;
+    margin-top: 40px
   }
 }
 .Form-Item {
@@ -65,7 +66,7 @@ export default {
   padding-bottom: 24px;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: center
 }
 @media screen and (max-width: 480px) {
   .Form-Item {
@@ -73,34 +74,34 @@ export default {
     padding-right: 14px;
     padding-top: 16px;
     padding-bottom: 16px;
-    flex-wrap: wrap;
+    flex-wrap: wrap
   }
 }
 .Form-Item:nth-child(5) {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd
 }
 .Form-Item-Label {
   width: 100%;
   max-width: 248px;
   letter-spacing: 0.05em;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 18px
 }
 @media screen and (max-width: 480px) {
   .Form-Item-Label {
     max-width: inherit;
     display: flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 15px
   }
 }
 .Form-Item-Label.isMsg {
   margin-top: 8px;
-  margin-bottom: auto;
+  margin-bottom: auto
 }
 @media screen and (max-width: 480px) {
   .Form-Item-Label.isMsg {
-    margin-top: 0;
+    margin-top: 0
   }
 }
 .Form-Item-Label-Required {
@@ -113,7 +114,7 @@ export default {
   text-align: center;
   background: #5bc8ac;
   color: #fff;
-  font-size: 14px;
+  font-size: 14px
 }
 @media screen and (max-width: 480px) {
   .Form-Item-Label-Required {
@@ -121,7 +122,7 @@ export default {
     padding-top: 4px;
     padding-bottom: 4px;
     width: 32px;
-    font-size: 10px;
+    font-size: 10px
   }
 }
 .Form-Item-Input {
@@ -135,7 +136,7 @@ export default {
   width: 100%;
   max-width: 410px;
   background: #eaedf2;
-  font-size: 18px;
+  font-size: 18px
 }
 @media screen and (max-width: 480px) {
   .Form-Item-Input {
@@ -143,7 +144,7 @@ export default {
     margin-top: 18px;
     height: 40px;
     flex: inherit;
-    font-size: 15px;
+    font-size: 15px
   }
 }
 .Form-Item-Textarea {
@@ -157,7 +158,7 @@ export default {
   width: 100%;
   max-width: 410px;
   background: #eaedf2;
-  font-size: 18px;
+  font-size: 18px
 }
 @media screen and (max-width: 480px) {
   .Form-Item-Textarea {
@@ -165,7 +166,7 @@ export default {
     margin-left: 0;
     height: 200px;
     flex: inherit;
-    font-size: 15px;
+    font-size: 15px
   }
 }
 .Form-Btn {
@@ -183,20 +184,17 @@ export default {
   font-weight: bold;
   font-size: 20px;
 }
-
 button:valid{
   background-color: #5bc8ac;
-  cursor: pointer;
+  cursor: pointer
 }
-
 @media screen and (max-width: 480px) {
   .Form-Btn {
     margin-top: 24px;
     padding-top: 8px;
     padding-bottom: 8px;
     width: 160px;
-    font-size: 16px;
+    font-size: 16px
   }
 }
-
 </style>

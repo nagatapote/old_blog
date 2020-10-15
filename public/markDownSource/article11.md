@@ -7,7 +7,7 @@ vue.js
 ## 目的
 
 コードに色を付けて見やすくする。
-基本　→　背景：黒、文字色：白
+(基本　→　背景：黒、文字色：白)
 
 ## やったこと
 
@@ -45,7 +45,7 @@ Vue.use(Highlight)
 
 vueファイルに、以下のようにv-highlightを記述することで使用可能となる
 
-```javascript
+```html
 <template>
   <div id="md" v-highlight>
   </div>

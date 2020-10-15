@@ -11,10 +11,12 @@ vue.jsの理解を深めるため。
 
 ## 参考サイト
 １．<a href="https://www.actzero.jp/developer/report-19774.html" target="_blank">https://www.actzero.jp/developer/report-19774.html</a>
+
 ２．<a href="https://qiita.com/Mitsuzara/items/fccdb17ba14c0c9be20c" target="_blank">https://qiita.com/Mitsuzara/items/fccdb17ba14c0c9be20c</a>
 
 ## 完成コード
-各説明は、コード内に書いています。<br />
+各説明は、コード内に書いています。
+
 **Game.vue**
 ```html
 <template>
