@@ -1,0 +1,17 @@
+{
+  "name": "pote' blog",
+  "short_name": "pote",
+  "theme_color": "#5e21f3",
+  "background_color": "#f3a521",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+    "src": "favicon.png",
+    "sizes": "72x72",
+    "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}

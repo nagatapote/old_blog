@@ -1,6 +1,10 @@
 # SPAの「/」以外でリロードすると404エラーになる
 ## 前提
-vue.js
+vue.js 2.9.6
+
+vue cli 2.6.12
+
+node  v12.18.4
 
 netlify
 

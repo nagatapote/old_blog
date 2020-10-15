@@ -6,8 +6,7 @@
 
 <script>
 import Vue from 'vue'
-import VueMarkdown from 'vue-markdown/src/VueMarkdown.js'
-import axios from 'axios'
+import VueMarkdown from '../plugins/vuemarkdown.js'
 import Hljs from 'highlight.js/lib/core.js'
 import javascript from 'highlight.js/lib/languages/javascript'
 import html from 'highlight.js/lib/languages/xml.js'
@@ -27,7 +26,6 @@ Highlight.install = function (Vue, options) {
   })
 }
 
-Vue.prototype.$axios = axios
 Vue.use(Highlight)
 
 export default {
@@ -54,49 +52,35 @@ export default {
   margin: 20px
 }
 #md img {
-    border: 5px solid green;
-    max-width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px
+  border: 2px solid black;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px
 }
-pre {
-    margin: 1em 0;
-    padding: 1em;
-    border-radius: 5px;
-    background: #25292f;
-    color: #fff
+code {
+  border-radius: 5px
 }
 #md h1 {
-    padding: 1rem 2rem;
-    border-left: 4px solid #000;
-    margin-bottom: 5px;
-    background: #f4f4f4
-  }
-
+  padding: 1rem 2rem;
+  border-left: 4px solid #000;
+  margin-bottom: 5px;
+  background: #f4f4f4
+}
 #md h2 {
-    border-bottom: 3px solid #000;
-    margin-top: 10px;
-    margin-bottom: 10px
-  }
-
+  border-bottom: 3px solid #000;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
 #md h3 {
-    border-bottom: 6px double #000;
-    margin-top: 10px;
-    margin-bottom: 10px
-  }
-
+  border-bottom: 6px double #000;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
 #md h4 {
-    border-bottom: 2px solid #000;
-    margin-top: 10px;
-    margin-bottom: 10px
-  }
-
-/*
-
-Style with support for rainbow parens
-
-*/
-
+  border-bottom: 2px solid #000;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
 .hljs {
   display: block;
   overflow-x: auto;
@@ -104,12 +88,10 @@ Style with support for rainbow parens
   background: #25292f;
   color: #d1d9e1
 }
-
 .hljs-comment,
 .hljs-quote {
-  color: #969896;
+  color: #969896
 }
-
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-literal,
@@ -117,39 +99,33 @@ Style with support for rainbow parens
 .hljs-addition {
   color: #cc99cc
 }
-
 .hljs-number,
 .hljs-selector-attr,
 .hljs-selector-pseudo {
   color: #f99157
 }
-
 .hljs-string,
 .hljs-doctag,
 .hljs-regexp {
   color: #8abeb7
 }
-
 .hljs-title,
 .hljs-name,
 .hljs-section,
 .hljs-built_in {
   color: #b5bd68
 }
-
 .hljs-variable,
 .hljs-template-variable,
 .hljs-selector-id,
 .hljs-class .hljs-title {
    color: #ffcc66
 }
-
 .hljs-section,
 .hljs-name,
 .hljs-strong {
   font-weight: bold
 }
-
 .hljs-symbol,
 .hljs-bullet,
 .hljs-subst,
@@ -157,15 +133,12 @@ Style with support for rainbow parens
 .hljs-link {
   color: #f99157
 }
-
 .hljs-deletion {
   color: #dc322f
 }
-
 .hljs-formula {
   background: #eee8d5
 }
-
 .hljs-attr,
 .hljs-attribute {
   color: #81a2be

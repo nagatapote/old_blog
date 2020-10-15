@@ -100,7 +100,7 @@ $ git push
 **※初めてリモートリポジトリにpushする場合は、以下のコマンド**
 
 ```
-$ git remote add origin git@github.com:[githubID]]/[リポジトリ名]
+$ git remote add origin git@github.com:[githubID]/[リポジトリ名]
 ```
 
 以下の「Code」で確認可能

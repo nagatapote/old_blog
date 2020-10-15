@@ -1,7 +1,11 @@
 # Markdownファイルを１つのvueファイルからURLに応じて動的に読み込む
 
 ## 前提
-vue.js
+vue.js 2.9.6
+
+vue cli 2.6.12
+
+node  v12.18.4
 
 vue-router
 
@@ -26,7 +30,7 @@ $ npm install --save vue-markdown
 
 以下のように記述することで使えるようになります。
 
-```javascript
+```html
 <template>
     <div>
     <vue-markdown></vue-markdown>
@@ -73,7 +77,7 @@ vueファイルに$route.params.idを記述します。
 
 **Markdown.vue**
 
-```javascript
+```html
 <template>
   <div id="md">
     <vue-markdown :source="source"></vue-markdown>

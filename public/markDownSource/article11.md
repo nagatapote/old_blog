@@ -1,8 +1,11 @@
 # vue-markdown-highlightでシンタックスハイライトを実装した
 
 ## 前提
+vue.js 2.9.6
 
-vue.js
+vue cli 2.6.12
+
+node  v12.18.4
 
 ## 目的
 

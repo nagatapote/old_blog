@@ -43,7 +43,8 @@ $ nodebrew install-binary [バージョン]
 $ nodebrew ls
 ```
 
-※「current: [バージョン]」が現在利用しているバージョン<br />
+※「current: [バージョン]」が現在利用しているバージョン
+
 **バージョンの切り替え**
 
 ```
