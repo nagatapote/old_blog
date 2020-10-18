@@ -51,7 +51,6 @@ export default {
         .then(response => (this.source = response.data))
     }
   }
-
 }
 </script>
 

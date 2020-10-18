@@ -138,7 +138,8 @@
   background: #fff
 }
 .card__img {
-  width: 100%
+  width: 100%;
+  height: 200px
 }
 .card__meta {
   display: flex;
