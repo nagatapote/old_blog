@@ -3,7 +3,7 @@ import App from './App.vue'
 import Ads from 'vue-google-adsense'
 import router from './router'
 import axios from 'axios'
-import './registerServiceWorker'
+import './registerServiceWorker.js'
 
 Vue.prototype.$axios = axios
 Vue.config.productionTip = false
