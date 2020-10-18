@@ -25,7 +25,7 @@
   <div class="profile-sns">
     <span>FOLLOW ME</span>
     <a target="_blank" href="https://twitter.com/pote_nagata"><img src="./assets/twitter.png" width="30px" height="30px"></a>
-    <a target="_blank" href="https://github.com/nagatapote"><img src="./assets/github.png" width="30px" height="30px"></a>
+    <a target="_blank" href="https://github.com/nagatapote"><img src="./assets/GitHub.png" width="30px" height="30px"></a>
     <router-link to="/Form"><img src="./assets/mail.png" width="30px" height="30px"></router-link>
   </div>
 </div>
