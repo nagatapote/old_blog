@@ -1,3 +1,5 @@
+const { GenerateSW } = require('workbox-webpack-plugin')
+
 module.exports = {
   pages: {
     index: {
@@ -6,23 +8,26 @@ module.exports = {
     }
   },
   pwa: {
+    name: 'pote\'s blog',
+    themeColor: '#5e21f3',
+    appleMobileWebAppCapable: 'yes',
+    appleMobileWebAppStatusBarStyle: 'black',
+
+    // configure the workbox plugin
+    workboxPluginMode: 'GenerateSW',
     workboxOptions: {
-      runtimeCaching: [
-        {
-          urlPattern: /https:nagatapote.work/,
-          handler: 'networkFirst',
-          options: {
-            cacheName: 'pote-cache',
-            expiration: {
-              maxEntries: 10,
-              maxAgeSeconds: 300
-            },
-            cacheableResponse: {
-              statuses: [0, 200]
-            }
-          }
-        }
-      ]
+      // swSrc is required in InjectManifest mode.
+      // swSrc: 'dev/sw.js'
+      // ...other Workbox options...
     }
+  },
+  configureWebpack: config => {
+    config.plugins.push(
+      new GenerateSW({
+        cacheId: 'calc-tax-insurance-v3',
+        skipWaiting: false,
+        clientsClaim: false
+      })
+    )
   }
 }
