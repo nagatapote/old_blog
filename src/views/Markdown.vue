@@ -43,7 +43,15 @@ export default {
     this.$axios
       .get(`./markDownSource/${this.$route.params.id}.md`)
       .then(response => (this.source = response.data))
+  },
+  watch: {
+    $route () {
+      this.$axios
+        .get(`./markDownSource/${this.$route.params.id}.md`)
+        .then(response => (this.source = response.data))
+    }
   }
+
 }
 </script>
 
