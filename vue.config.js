@@ -5,8 +5,6 @@ module.exports = {
       title: 'pote\'s blog',
     }
   },
-  outputDir: 'docs',
-  publicPath: '/',
   pwa: {
     workboxOptions: {
       runtimeCaching: [
