@@ -1,5 +1,3 @@
-const { GenerateSW } = require('workbox-webpack-plugin')
-
 module.exports = {
   pages: {
     index: {
@@ -7,25 +5,26 @@ module.exports = {
       title: 'pote\'s blog',
     }
   },
-  configureWebpack: config => {
-    config.plugins.push(
-      new GenerateSW({
-        cacheId: 'calc-tax-insurance-v3',
-        runtimeCaching: [{
-          urlPattern: /^https:\/\/nagatapote\.work/,
-          handler: 'staleWhileRevalidate',
+  outputDir: 'docs',
+  publicPath: '/',
+  pwa: {
+    workboxOptions: {
+      runtimeCaching: [
+        {
+          urlPattern: /https:\/\/nagatapote.work/,
+          handler: 'networkFirst',
           options: {
-            cacheName: 'api',
+            cacheName: 'pote-cache',
             expiration: {
-              maxEntries: 20,
-              maxAgeSeconds: 60 * 60 * 24 * 30
+              maxEntries: 10,
+              maxAgeSeconds: 300
             },
             cacheableResponse: {
               statuses: [0, 200]
             }
           }
-        }]
-      })
-    )
+        }
+      ]
+    }
   }
 }
