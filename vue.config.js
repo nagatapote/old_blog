@@ -5,11 +5,12 @@ module.exports = {
       title: 'pote\'s blog',
     }
   },
+  publicPath: '/',
   pwa: {
     workboxOptions: {
       runtimeCaching: [
         {
-          urlPattern: /https:\/\/nagatapote.work/,
+          urlPattern: /https:\/\/nagatapote.work\/*/,
           handler: 'networkFirst',
           options: {
             cacheName: 'pote-cache',
