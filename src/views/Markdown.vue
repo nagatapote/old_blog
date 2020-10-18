@@ -58,7 +58,8 @@ export default {
   margin-bottom: 10px
 }
 code {
-  border-radius: 5px
+  border-radius: 5px;
+  border: 10px solid #25292f
 }
 #md h1 {
   padding: 1rem 2rem;

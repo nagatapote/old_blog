@@ -11,12 +11,6 @@ const routes = [
     meta: { title: 'pote\'s blog' }
   },
   {
-    path: '/about',
-    name: 'About',
-    component: () => import('../views/About.vue'),
-    meta: { title: 'pote\'s blog | Profile' }
-  },
-  {
     path: '/Article_1',
     name: 'Article1',
     component: () => import('../views/Article_1.vue'),
