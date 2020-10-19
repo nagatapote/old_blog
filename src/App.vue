@@ -8,11 +8,6 @@
 </ul>
 </header>
 <div id="left">
-  <center>
-  <div id="adu">
-<iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=42&l=ur1&category=digital_software&f=ifr&linkID=2eca9292996320e0853a065c88e17f6a&t=nagatapote-22&tracking_id=nagatapote-22" width="234" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
-  </div>
-  </center>
 <router-view />
 </div>
 <center>
@@ -72,9 +67,6 @@ ul.topnav {
   padding: 0;
   list-style-type: none;
   background-color: #1b2538
-}
-#adu{
-  margin: 25px
 }
 #adr{
   width: 75%;

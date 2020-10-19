@@ -7,6 +7,19 @@
 <router-link class="btn-square" to="/Article_2">2</router-link><br /><br />
 
 <article class="card">
+  <img class="card__img" src="../assets/article/article2.jpg" decoding="async">
+  <div class="card__meta">
+    <p class="card__cat">vue.js</p>
+    <time class="card__time" datetime="2020-10-20">2020.10.20</time>
+  </div>
+  <h2 class="card__ttl">vueのSPAサイトで表示速度の改善</h2>
+  <p class="card__desc">
+  <router-link class="btn-square" to="/article14">Read more</router-link>
+  </p>
+</article>
+<br />
+
+<article class="card">
   <img class="card__img" src="../assets/article/article1.jpg" decoding="async">
   <div class="card__meta">
     <p class="card__cat">vue.js</p>
