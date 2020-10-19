@@ -9,7 +9,11 @@
 </header>
 <div id="left">
   <div id="adu">
-    <Adsense data-ad-client="ca-pub-3401994941764286" data-ad-slot="1930190468"></Adsense>
+    <InFeedAdsense
+    data-ad-layout-key="-fb+5w+4e-db+86"
+    data-ad-client="ca-pub-3401994941764286"
+    data-ad-slot="5231141220">
+</InFeedAdsense>
   </div>
 <router-view />
 </div>
