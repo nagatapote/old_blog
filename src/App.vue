@@ -34,9 +34,7 @@
   </div>
 </div>
 </div>
-<div id="adr">
 <Adsense data-ad-client="ca-pub-3401994941764286" data-ad-slot="7553735009"></Adsense>
-</div>
   </div>
   </center>
 <footer>
@@ -85,7 +83,6 @@ ul.topnav {
   width: 72%;
   padding-bottom: 75px
 }
-
 #right{
   float: right;
   width: 28%;
@@ -105,9 +102,6 @@ ul.topnav {
     float: none;
     width: 100%
   }
-  #adu{
-    width: none
-}
 }
 ul.topnav li {
   float: left
