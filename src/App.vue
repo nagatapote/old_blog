@@ -19,8 +19,7 @@
   </div>
   <div class="profile-content">
         <span class="profile-name">永田浩晃(Hiroaki Nagata)</span>
-    <span class="profile-job">ITエンジニア</span>
-    <span class="profile-intro">あだ名は"ぽて"(pote)<br />愛知県名古屋市在住<br />ミニマリスト<br />ウーバーイーツ配達員<br />趣味はウクレレとよさこいとボードゲーム</span>
+    <span class="profile-intro">ITエンジニア<br />ミニマリスト</span>
   </div>
   <div class="profile-sns">
     <span>FOLLOW ME</span>
@@ -69,13 +68,13 @@ ul.topnav {
 }
 #left{
   float: left;
-  width: 70%;
+  width: 72%;
   padding-bottom: 75px
 }
 
 #right{
   float: right;
-  width: 30%;
+  width: 28%;
   right: 0;
   margin-top: 25px;
   position: fixed;
@@ -157,7 +156,7 @@ ul.topnav li a:hover:not(.active) {
     height: auto
 }
 .profile-content{
-  margin: 0 0 20px;
+  margin: 0 0 5px;
   padding: 0px
 }
 .profile-content span{
@@ -166,12 +165,6 @@ ul.topnav li a:hover:not(.active) {
 .profile-name{
   margin-bottom: 3px;
   font-weight: bold;
-  text-align: center
-}
-.profile-job{
-  margin-bottom: 5px;
-  color: #ccc;
-  font-size: 12px;
   text-align: center
 }
 .profile-intro{
