@@ -73,8 +73,11 @@ ul.topnav {
   list-style-type: none;
   background-color: #1b2538
 }
+#adu{
+  margin: 25px
+}
 #adr{
-  width: 80%;
+  width: 75%;
   margin: 25px
 }
 #left{
