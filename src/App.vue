@@ -9,7 +9,7 @@
 </header>
 <div id="left">
   <div id="adu">
-    <Adsense data-ad-client="ca-pub-3401994941764286" data-ad-slot="1930190468"></Adsense>
+    <Adsense style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-3401994941764286" data-ad-slot="1930190468"></Adsense>
   </div>
 <router-view />
 </div>
@@ -73,7 +73,6 @@ ul.topnav {
 }
 #adu{
   width: 80%;
-  height: 90px;
   margin: 25px
 }
 #adr{
