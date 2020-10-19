@@ -72,6 +72,9 @@ ul.topnav {
   background-color: #1b2538
 }
 #adu{
+  display: inline-block;
+  width: 728px;
+  height: 90px;
   margin: 25px
 }
 #adr{
@@ -123,6 +126,7 @@ ul.topnav li a:hover:not(.active) {
   background: #fff;
   box-shadow: 0px 1px 3px rgba(0,0,0,.18);
   overflow: hidden;
+  margin: 25px
 }
 .profile-card:before{
  width:120%;
