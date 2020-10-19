@@ -8,9 +8,11 @@
 </ul>
 </header>
 <div id="left">
+  <center>
   <div id="adu">
-<Adsense data-ad-client="ca-pub-3401994941764286" data-ad-slot="7553735009"></Adsense>
+<iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=42&l=ur1&category=digital_software&f=ifr&linkID=2eca9292996320e0853a065c88e17f6a&t=nagatapote-22&tracking_id=nagatapote-22" width="234" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
   </div>
+  </center>
 <router-view />
 </div>
 <center>
@@ -72,7 +74,6 @@ ul.topnav {
   background-color: #1b2538
 }
 #adu{
-  width: 80%;
   margin: 25px
 }
 #adr{
@@ -104,6 +105,9 @@ ul.topnav {
     float: none;
     width: 100%
   }
+  #adu{
+    width: none
+}
 }
 ul.topnav li {
   float: left
