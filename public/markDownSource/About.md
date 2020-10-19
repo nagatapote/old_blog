@@ -55,6 +55,12 @@ CSS
 
 JavaScript(Vue.js React)
 
+Netlify
+
+Firebase
+
+GitHub
+
 ### ライフスタイル
 ミニマリストです。
 

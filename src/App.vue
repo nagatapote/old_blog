@@ -30,6 +30,7 @@
   </div>
 </div>
 </div>
+<Adsense data-ad-client="ca-pub-3401994941764286" data-ad-slot="7553735009"></Adsense>
   </div>
   </center>
 <footer>

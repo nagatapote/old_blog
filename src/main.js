@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Ads from 'vue-google-adsense'
 import router from './router'
+import Ads from 'vue-google-adsense'
 import axios from 'axios'
 import './registerServiceWorker.js'
 
