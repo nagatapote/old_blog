@@ -9,11 +9,7 @@
 </header>
 <div id="left">
   <div id="adu">
-    <InFeedAdsense
-    data-ad-layout-key="-fb+5w+4e-db+86"
-    data-ad-client="ca-pub-3401994941764286"
-    data-ad-slot="5231141220">
-</InFeedAdsense>
+<Adsense data-ad-client="ca-pub-3401994941764286" data-ad-slot="1710928227"></Adsense>
   </div>
 <router-view />
 </div>
@@ -124,7 +120,7 @@ ul.topnav li a:hover:not(.active) {
 }
 .profile-card{
   width: 80%;
-  max-width:400px;
+  max-width: 300px;
   position: relative;
   background: #fff;
   box-shadow: 0px 1px 3px rgba(0,0,0,.18);
