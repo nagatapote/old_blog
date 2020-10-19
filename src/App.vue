@@ -9,7 +9,7 @@
 </header>
 <div id="left">
   <div id="adu">
-<Adsense data-ad-client="ca-pub-3401994941764286" data-ad-slot="1710928227"></Adsense>
+<Adsense data-ad-client="ca-pub-3401994941764286" data-ad-slot="7553735009"></Adsense>
   </div>
 <router-view />
 </div>
