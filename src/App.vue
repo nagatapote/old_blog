@@ -8,6 +8,9 @@
 </ul>
 </header>
 <div id="left">
+  <div id="adu">
+    <Adsense data-ad-client="ca-pub-3401994941764286" data-ad-slot="1930190468"></Adsense>
+  </div>
 <router-view />
 </div>
 <center>
@@ -29,7 +32,9 @@
   </div>
 </div>
 </div>
+<div id="adr">
 <Adsense data-ad-client="ca-pub-3401994941764286" data-ad-slot="7553735009"></Adsense>
+</div>
   </div>
   </center>
 <footer>
@@ -65,6 +70,12 @@ ul.topnav {
   padding: 0;
   list-style-type: none;
   background-color: #1b2538
+}
+#adu{
+  margin: 25px
+}
+#adr{
+  margin: 25px
 }
 #left{
   float: left;
@@ -112,7 +123,6 @@ ul.topnav li a:hover:not(.active) {
   background: #fff;
   box-shadow: 0px 1px 3px rgba(0,0,0,.18);
   overflow: hidden;
-  margin-bottom: 25px;
 }
 .profile-card:before{
  width:120%;
