@@ -72,12 +72,12 @@ ul.topnav {
   background-color: #1b2538
 }
 #adu{
-  display: inline-block;
-  width: 728px;
+  width: 80%;
   height: 90px;
   margin: 25px
 }
 #adr{
+  width: 80%;
   margin: 25px
 }
 #left{
