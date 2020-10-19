@@ -113,6 +113,7 @@ ul.topnav li a:hover:not(.active) {
   background: #fff;
   box-shadow: 0px 1px 3px rgba(0,0,0,.18);
   overflow: hidden;
+  padding-bottom: 25px;
 }
 .profile-card:before{
  width:120%;
