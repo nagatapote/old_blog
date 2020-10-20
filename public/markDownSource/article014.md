@@ -17,11 +17,11 @@ Build時のデータ量が約2.0MBもある(Gzip前)
 ## 結論
 以下の画像のように改善された。(Lighthouse)
 
-Build時のデータ量も約300KBまで減らすことができた。
+Build時のデータ量も約300KBまで減らすことができた。(Gzip前)
 
 もちろん体感速度も向上している。
 
-<img src="./img/article14/Lighthouse.png" decoding="async">
+<img src="./img/article014/Lighthouse.png" decoding="async">
 
 ## やったこと
 **・Lighthouseを導入**

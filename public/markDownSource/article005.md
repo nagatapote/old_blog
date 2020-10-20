@@ -38,7 +38,7 @@ $ vue add vuerify
 $ npm run serve
 ```
 
-<img src="./img/article5/Vuetify.png" decoding="async">
+<img src="./img/article005/Vuetify.png" decoding="async">
 
 ### 公式サイトからソースをコピペまたは参考にする
 以下の公式サイトにアクセスします。
@@ -47,10 +47,10 @@ $ npm run serve
 
 左側のメニューや検索で実装したいコンポーネントを探し、右上の＜＞ボタンからコードを確認、コピペすることができます。
 
-<img src="./img/article5/Vuetify01.png" decoding="async">
+<img src="./img/article005/Vuetify01.png" decoding="async">
 
 私のブログもVuetifyでデザイン等を実装しています。(※2020/09/29時点)
 
-<img src="./img/article5/Vuetify02.png" decoding="async">
+<img src="./img/article005/Vuetify02.png" decoding="async">
 
 以上

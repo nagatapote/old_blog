@@ -81,7 +81,6 @@ ul.topnav {
   float: right;
   width: 28%;
   right: 0;
-  margin-top: 25px;
   position: fixed;
   padding-bottom: 75px
 }

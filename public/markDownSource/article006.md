@@ -10,7 +10,7 @@ node  v12.18.4
 Netlifyにデプロイ時、以下のエラーが発生
 （長過ぎるため、全部は表示していません）
 
-<img src="./img/article6/core-js_error.png" decoding="async">
+<img src="./img/article006/core-js_error.png" decoding="async">
 
 ## 解決方法
 babel.config.jsを以下の内容に変更し、解決しました。

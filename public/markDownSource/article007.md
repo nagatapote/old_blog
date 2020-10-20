@@ -14,7 +14,7 @@ MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
 
 公式サイト記載のコマンドでインストール
 
-<img src="./img/article7/homebrew.png" decoding="async">
+<img src="./img/article007/homebrew.png" decoding="async">
 
 ### nodebrewをインストール
 **インストールコマンド**
