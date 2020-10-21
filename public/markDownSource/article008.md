@@ -1,8 +1,8 @@
 # vue.config.jsからページタイトルを設定する方法
 ## 前提
-vue.js 2.9.6
+vue.js v2.6.12
 
-vue cli 2.6.12
+vue cli v4.5.6
 
 node  v12.18.4
 

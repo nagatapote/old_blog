@@ -1,9 +1,9 @@
 # vue.jsでじゃんけんゲームを作ってみた
 
 ## 前提
-vue.js 2.9.6
+vue.js v2.6.12
 
-vue cli 2.6.12
+vue cli v4.5.7
 
 node  v12.18.4
 

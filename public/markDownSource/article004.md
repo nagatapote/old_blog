@@ -6,9 +6,9 @@ vue.jsとfirebaseで認証機能を実装してみた
 会社で認証関係の仕事をしているので、気になってやってみた
 
 ## 前提
-vue.js 2.9.6
+vue.js v3.0.0
 
-vue cli 2.6.12
+vue cli v4.5.6
 
 node  v12.18.4
 
