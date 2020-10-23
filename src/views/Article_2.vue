@@ -38,7 +38,7 @@
     <p class="card__cat">node.js</p>
     <time class="card__time" datetime="2020-10-03">2020.10.03</time>
   </div>
-  <h2 class="card__ttl">nodebrewでnodeのバージョン管理</h2>
+  <h2 class="card__ttl">nodebrewでnode.jsのインストール＆バージョン管理</h2>
   <p class="card__desc">
   <router-link class="btn-square" to="/article007">Read more</router-link>
   </p>

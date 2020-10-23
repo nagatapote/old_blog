@@ -1,4 +1,4 @@
-# nodebrewでnodeのバージョン管理
+# nodebrewでnode.jsのインストール＆バージョン管理
 ## 前提
 MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
 
@@ -31,11 +31,19 @@ $ brew install nodebrew
 $ nodebrew ls-remote
 ```
 
+**インストールする場合以下のコマンドが必要**
+
+```
+$ nodebrew setup
+```
+
 **特定のバージョンのインストール**
 
 ```
 $ nodebrew install-binary [バージョン]
 ```
+
+※npmもインストールされます。($ npm -v でバージョン確認。)
 
 **利用可能なバージョン**
 
@@ -57,9 +65,11 @@ $ nodebrew use [バージョン]
 $ node -v
 ```
 
-#### 「current」と「node -v」のバージョンが一致しない場合
+#### 「current」と「node -v」のバージョンが一致しない場合またはnodeコマンドが使えない場合
 
 **PATHが通っていない可能性があるので、下記方法でPATHを追記**
+
+**zshの場合**
 
 ```
 $ vi ~/.zshrc
@@ -71,6 +81,20 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 ```
 $ source ~/.zshrc
+```
+
+**bashの場合**
+
+```
+$ vi ~/.bash_profile
+```
+
+```
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+```
+
+```
+$ source ~/.bash_profile
 ```
 
 以上

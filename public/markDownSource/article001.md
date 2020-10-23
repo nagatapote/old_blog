@@ -140,6 +140,8 @@ URLをクリックするとサイトが表示されます
 
 ※上記画像は、名前.comでドメインを取得し、設定済み
 
+ドメイン設定は、以下のサイトを参考にしました。
+
 <a href="https://note.com/koushikagawa/n/n407cde93bdca" target="_blank">お名前.comで取得したドメインを、Netlify に設定する方法</a>
 
 以上
