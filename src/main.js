@@ -17,10 +17,10 @@ Vue.use(Ads.InFeedAdsense);
 
 Vue.use(VueAnalytics, {
   id: "UA-137236873-1",
-  router
+  router,
 });
 
 new Vue({
   router,
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");

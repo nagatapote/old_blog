@@ -10,6 +10,27 @@
       <article class="card">
         <img
           class="card__img"
+          src="../assets/article/article006.jpg"
+          decoding="async"
+        />
+        <div class="card__meta">
+          <p class="card__cat">VSCode</p>
+          <time class="card__time" datetime="2020-10-26">2020.10.26</time>
+        </div>
+        <h2 class="card__ttl">
+          VSCode の拡張機能「Prettier」が便利なので導入してみた
+        </h2>
+        <p class="card__desc">
+          <router-link class="btn-square" to="/article018"
+            >Read more</router-link
+          >
+        </p>
+      </article>
+      <br />
+
+      <article class="card">
+        <img
+          class="card__img"
           src="../assets/article/article005.jpg"
           decoding="async"
         />
