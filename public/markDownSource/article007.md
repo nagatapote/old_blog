@@ -1,13 +1,17 @@
-# nodebrewでnode.jsのインストール＆バージョン管理
+# nodebrew で node.js のインストール＆バージョン管理
+
 ## 前提
+
 MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
 
 ## やったこと
-**・homebrewをインストール**
 
-**・nodebrewをインストール**
+**・homebrew をインストール**
 
-### homebrewをインストール
+**・nodebrew をインストール**
+
+### homebrew をインストール
+
 以下の公式サイトへアクセス
 
 <a href="https://brew.sh/index_ja" target="_blank">https://brew.sh/index_ja</a>
@@ -16,14 +20,15 @@ MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)
 
 <img src="./img/article007/homebrew.png" decoding="async">
 
-### nodebrewをインストール
+### nodebrew をインストール
+
 **インストールコマンド**
 
 ```
 $ brew install nodebrew
 ```
 
-#### nodebrew各種コマンド
+#### nodebrew 各種コマンド
 
 **利用可能なバージョン確認**
 
@@ -43,7 +48,7 @@ $ nodebrew setup
 $ nodebrew install-binary [バージョン]
 ```
 
-※npmもインストールされます。($ npm -v でバージョン確認。)
+※npm もインストールされます。(\$ npm -v でバージョン確認。)
 
 **利用可能なバージョン**
 
@@ -65,11 +70,11 @@ $ nodebrew use [バージョン]
 $ node -v
 ```
 
-#### 「current」と「node -v」のバージョンが一致しない場合またはnodeコマンドが使えない場合
+#### 「current」と「node -v」のバージョンが一致しない場合または node コマンドが使えない場合
 
-**PATHが通っていない可能性があるので、下記方法でPATHを追記**
+**PATH が通っていない可能性があるので、下記方法で PATH を追記**
 
-**zshの場合**
+**zsh の場合**
 
 ```
 $ vi ~/.zshrc
@@ -83,7 +88,7 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 $ source ~/.zshrc
 ```
 
-**bashの場合**
+**bash の場合**
 
 ```
 $ vi ~/.bash_profile

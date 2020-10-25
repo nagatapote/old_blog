@@ -1,20 +1,26 @@
-# vue.jsとnetlifyでblog作成
+# vue.js と netlify で blog 作成
+
 ## 目的
+
 技術ブログ作成し、やったことを残しておくため
 
 ## 使ったもの
-PC：MacBookPro 13インチ メモリ8GB
+
+PC：MacBookPro 13 インチ メモリ 8GB
 
 エディタ：Visual Studio Code(ターミナルも使えて便利)
 
 ## やったこと
-**・vue.jsとgithubの連携**
 
-**・githubとnetlifyの連携**
+**・vue.js と github の連携**
 
-### vue.jsとgithubの連携
-#### githubの登録、リポジトリの作成
-githubとググって、登録
+**・github と netlify の連携**
+
+### vue.js と github の連携
+
+#### github の登録、リポジトリの作成
+
+github とググって、登録
 
 <img src="./img/article001/NewRepositories.png" decoding="async">
 
@@ -25,6 +31,7 @@ githubとググって、登録
 「Repository name」に好きな名前を入れて、「Create repository」をクリックすれば完了
 
 #### 公開鍵・秘密鍵の作成
+
 **鍵を入れるフォルダへ移動**
 
 ```
@@ -38,10 +45,11 @@ $ ssh-keygen -t rsa
 /* 質問されるが、全てEnter */
 ```
 
-#### 公開鍵をGitHubにアップ
+#### 公開鍵を GitHub にアップ
+
 <a href="https://github.com/settings/ssh" target="_blank">https://github.com/settings/ssh</a>
 
-上記ページで公開鍵の設定が可能。（GitHubに登録してある必要あり）
+上記ページで公開鍵の設定が可能。（GitHub に登録してある必要あり）
 
 <img src="./img/article001/SSHkey.png" decoding="async">
 
@@ -67,14 +75,15 @@ $ ssh -T git@github.com
 
 You've successfully authenticated, but GitHub does not provide shell access.
 
-#### githubへpushする方法
-**作業ディレクトリをgithubで管理するためのコマンド**
+#### github へ push する方法
+
+**作業ディレクトリを github で管理するためのコマンド**
 
 ```
 $ git init
 ```
 
-**作業ディレクトリ→ステージングエリア**
+**作業ディレクトリ → ステージングエリア**
 
 ```
 $ git add ファイル名
@@ -85,19 +94,19 @@ $ git add -A
 /* 作業ツリー内全て */
 ```
 
-**ステージングエリア→ローカルリポジトリ**
+**ステージングエリア → ローカルリポジトリ**
 
 ```
 $ git commit -m "コミットメッセージ"
 ```
 
-**ローカルリポジトリ→リモートリポジトリ**
+**ローカルリポジトリ → リモートリポジトリ**
 
 ```
 $ git push
 ```
 
-**※初めてリモートリポジトリにpushする場合は、以下のコマンド**
+**※初めてリモートリポジトリに push する場合は、以下のコマンド**
 
 ```
 $ git remote add origin git@github.com:[githubID]/[リポジトリ名]
@@ -111,8 +120,9 @@ $ git remote add origin git@github.com:[githubID]/[リポジトリ名]
 $ git push -u origin master
 ```
 
-### githubとnetlifyの連携
-netlifyとググって、githubでログイン
+### github と netlify の連携
+
+netlify とググって、github でログイン
 
 <img src="./img/article001/NewSiteFromGit.png" decoding="async">
 
@@ -126,22 +136,22 @@ netlifyとググって、githubでログイン
 
 <img src="./img/article001/DeploySite.png" decoding="async">
 
-vue.jsの場合、上記画像のように入力し、「Deploy site」をクリック
+vue.js の場合、上記画像のように入力し、「Deploy site」をクリック
 
-あとは、githubにpushするだけで勝手にデプロイしてくれます
+あとは、github に push するだけで勝手にデプロイしてくれます
 
 初回はビルドに時間がかかります
 
-完了すると以下のようにURLが表示されます
+完了すると以下のように URL が表示されます
 
-URLをクリックするとサイトが表示されます
+URL をクリックするとサイトが表示されます
 
 <img src="./img/article001/Deploy.png" decoding="async">
 
-※上記画像は、名前.comでドメインを取得し、設定済み
+※上記画像は、名前.com でドメインを取得し、設定済み
 
 ドメイン設定は、以下のサイトを参考にしました。
 
-<a href="https://note.com/koushikagawa/n/n407cde93bdca" target="_blank">お名前.comで取得したドメインを、Netlify に設定する方法</a>
+<a href="https://note.com/koushikagawa/n/n407cde93bdca" target="_blank">お名前.com で取得したドメインを、Netlify に設定する方法</a>
 
 以上

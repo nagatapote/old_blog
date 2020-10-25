@@ -1,32 +1,38 @@
-# Vuetifyの導入方法
+# Vuetify の導入方法
+
 ## 目的
+
 ブログのデザインをいい感じにしたかった
 
 ## 前提
+
 vue.js v2.6.12
 
 vue cli v4.5.6
 
-node  v12.18.4
+node v12.18.4
 
 ## 解決方法
-Vuetifyを導入することで、簡単にいい感じのデザインにすることができる
+
+Vuetify を導入することで、簡単にいい感じのデザインにすることができる
 
 ## やったこと
-**・Vuetifyの導入**
+
+**・Vuetify の導入**
 
 **・公式サイトからソースをコピペまたは参考にする**
 
-### Vuetifyの導入
-**vueのプロジェクトを作成**
+### Vuetify の導入
+
+**vue のプロジェクトを作成**
 
 ```
 $ vue create project
 ```
 
-**Vuetifyをインストール**
+**Vuetify をインストール**
 
-作成したprojectのフォルダに移動し、以下コマンド
+作成した project のフォルダに移動し、以下コマンド
 
 ```
 $ vue add vuerify
@@ -41,6 +47,7 @@ $ npm run serve
 <img src="./img/article005/Vuetify.png" decoding="async">
 
 ### 公式サイトからソースをコピペまたは参考にする
+
 以下の公式サイトにアクセスします。
 
 <a href="https://vuetifyjs.com/en/" target="_blank">https://vuetifyjs.com/en/</a>
@@ -49,7 +56,7 @@ $ npm run serve
 
 <img src="./img/article005/Vuetify01.png" decoding="async">
 
-私のブログもVuetifyでデザイン等を実装しています。(※2020/09/29時点)
+私のブログも Vuetify でデザイン等を実装しています。(※2020/09/29 時点)
 
 <img src="./img/article005/Vuetify02.png" decoding="async">
 

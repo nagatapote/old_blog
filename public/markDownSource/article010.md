@@ -1,28 +1,32 @@
-# Markdownファイルを１つのvueファイルからURLに応じて動的に読み込む
+# Markdown ファイルを１つの vue ファイルから URL に応じて動的に読み込む
 
 ## 前提
+
 vue.js v2.6.12
 
 vue cli v4.5.6
 
-node  v12.18.4
+node v12.18.4
 
 vue-router
 
 ## 目的
-Markdownファイルを配置するだけで、１つのvueファイルからURLごとに動的に読み込むようにする。
 
-Markdownファイルを配置するごとに、vueファイルを作成することをやめたかった。
-　
+Markdown ファイルを配置するだけで、１つの vue ファイルから URL ごとに動的に読み込むようにする。
+
+Markdown ファイルを配置するごとに、vue ファイルを作成することをやめたかった。
+
 ## やったこと
-**・vue-markdownのインストール**
 
-**・axiosのインストール**
+**・vue-markdown のインストール**
 
-**・$route.params.idでURLにごとに読み込む**
+**・axios のインストール**
 
-### vue-markdownのインストール
-以下のコマンドでvue-markdownをインストール
+**・\$route.params.id で URL にごとに読み込む**
+
+### vue-markdown のインストール
+
+以下のコマンドで vue-markdown をインストール
 
 ```
 $ npm install --save vue-markdown
@@ -42,7 +46,7 @@ import VueMarkdown from 'vue-markdown'
 </script>
 ```
 
-### axiosのインストール
+### axios のインストール
 
 以下のコマンドでインストールします。
 
@@ -50,19 +54,18 @@ import VueMarkdown from 'vue-markdown'
 $ npm install axios
 ```
 
-main.jsに以下を記述することで使えるようになります。
+main.js に以下を記述することで使えるようになります。
 
 ```javascript
-import Vue from 'vue'
-import axios from 'axios'
+import Vue from "vue";
+import axios from "axios";
 
-Vue.prototype.$axios = axios
+Vue.prototype.$axios = axios;
 ```
 
-### $route.params.idでURLにごとに読み込む
+### \$route.params.id で URL にごとに読み込む
 
-router/index.jsを以下のように記述します。
-
+router/index.js を以下のように記述します。
 
 ```javascript
 {
@@ -71,7 +74,7 @@ component: () => import('../views/Markdown.vue')
 }
 ```
 
-vueファイルに$route.params.idを記述します。
+vue ファイルに\$route.params.id を記述します。
 
 以下は完成形となります。
 
@@ -85,31 +88,30 @@ vueファイルに$route.params.idを記述します。
 </template>
 
 <script>
-import VueMarkdown from 'vue-markdown'
+  import VueMarkdown from "vue-markdown";
 
-export default {
-  el: '#md',
-  components: {
-    VueMarkdown
-  },
-  data () {
-    return { source: '' }
-  },
-  mounted: function () {
-    /* publicフォルダに置いたmdファイルを取得する */
-    this.$axios
-      .get(`./markDownSource/${this.$route.params.id}.md`)
-      .then(response => (this.source = response.data))
-  }
-
-}
+  export default {
+    el: "#md",
+    components: {
+      VueMarkdown,
+    },
+    data() {
+      return { source: "" };
+    },
+    mounted: function() {
+      /* publicフォルダに置いたmdファイルを取得する */
+      this.$axios
+        .get(`./markDownSource/${this.$route.params.id}.md`)
+        .then((response) => (this.source = response.data));
+    },
+  };
 </script>
 ```
 
-public/markDownSource配下にMarkdownファイルを配置しています。
+public/markDownSource 配下に Markdown ファイルを配置しています。
 
-以下のように、アクセスしたURLと同じ名前のmarkdownファイルを表示します。
+以下のように、アクセスした URL と同じ名前の markdown ファイルを表示します。
 
-/article1にアクセスした場合に、public/markDownSource/article1.mdを表示。
+/article1 にアクセスした場合に、public/markDownSource/article1.md を表示。
 
 以上。
