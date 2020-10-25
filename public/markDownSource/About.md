@@ -1,5 +1,7 @@
 # プロフィール
 
+<img src="../top.png" decoding="async" />
+
 ### 名前
 
 永田 浩晃(Hiroaki Nagata)
