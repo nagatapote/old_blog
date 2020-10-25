@@ -45,15 +45,13 @@
         </div>
       </div>
     </center>
-    <footer>
-      &copy; 2020 pote's blog
-    </footer>
+    <footer>&copy; 2020 pote's blog</footer>
   </div>
 </template>
 
 <style>
 body {
-  padding-top: 40px;
+  padding-top: 28px;
 }
 header {
   padding: 5px;
