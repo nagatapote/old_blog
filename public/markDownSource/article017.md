@@ -165,7 +165,7 @@ AWS ECS Fargate はインスタンス不要なので、EC2 は作成しなくて
 
 #### AWS でロードバランサーを作成。
 
-AWS 　 EC2 のロードバランサーから「ロードバランサーの作成」を行います。
+AWS EC2 のロードバランサーから「ロードバランサーの作成」を行います。
 
 <img src="./img/article017/LB1.png" decoding="async">
 

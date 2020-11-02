@@ -7,180 +7,30 @@
       <router-link class="btn-square" to="/Article_2">2</router-link
       ><br /><br />
 
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article009.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">vue.js</p>
-          <time class="card__time" datetime="2020-10-06">2020.10.06</time>
-        </div>
-        <h2 class="card__ttl">VueRouterで画面遷移時のスクロール位置制御</h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article009"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article008.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">vue.js</p>
-          <time class="card__time" datetime="2020-10-05">2020.10.05</time>
-        </div>
-        <h2 class="card__ttl">vue.config.jsからページタイトルを設定する方法</h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article008"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article007.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">node.js</p>
-          <time class="card__time" datetime="2020-10-03">2020.10.03</time>
-        </div>
-        <h2 class="card__ttl">
-          nodebrewでnode.jsのインストール＆バージョン管理
-        </h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article007"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article006.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">vue.js</p>
-          <time class="card__time" datetime="2020-09-30">2020.09.30</time>
-        </div>
-        <h2 class="card__ttl">core-jsモジュールエラー</h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article006"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article005.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">vue.js</p>
-          <time class="card__time" datetime="2020-09-29">2020.09.29</time>
-        </div>
-        <h2 class="card__ttl">Vuetifyの導入方法</h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article005"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article004.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">vue.js</p>
-          <time class="card__time" datetime="2020-09-27">2020.09.27</time>
-        </div>
-        <h2 class="card__ttl">vue.jsとfirebaseで認証機能実装</h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article004"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article003.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">vue.js</p>
-          <time class="card__time" datetime="2020-09-27">2020.09.27</time>
-        </div>
-        <h2 class="card__ttl">SPAの「/」以外でリロードすると404エラーになる</h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article003"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article002.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">vue.js</p>
-          <time class="card__time" datetime="2020-09-24">2020.09.24</time>
-        </div>
-        <h2 class="card__ttl">
-          リモートリポジトリ内を別のプロジェクトで上書き
-        </h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article002"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article001.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">vue.js</p>
-          <time class="card__time" datetime="2020-09-22">2020.09.22</time>
-        </div>
-        <h2 class="card__ttl">vue.jsとnetlifyでブログ作成</h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article001"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
+      <li
+        v-for="(item, index) in items"
+        :key="index"
+        style="list-style-type: none"
+      >
+        <article class="card">
+          <img class="card__img" :src="item.img" decoding="async" />
+          <div class="card__meta">
+            <p class="card__cat">{{ item.genre }}</p>
+            <time class="card__time" :datetime="item.datetime">{{
+              item.datetime
+            }}</time>
+          </div>
+          <h2 class="card__ttl">
+            {{ item.title }}
+          </h2>
+          <p class="card__desc">
+            <router-link class="btn-square" :to="item.link"
+              >Read more</router-link
+            >
+          </p>
+        </article>
+        <br />
+      </li>
 
       <router-link class="btn-square" to="/Article_1">1</router-link>&nbsp;
       <router-link class="btn-square" to="/Article_2">2</router-link
@@ -188,6 +38,89 @@
     </div>
   </center>
 </template>
+
+<script>
+export default {
+  name: "Article",
+  data() {
+    return {
+      items: [
+        {
+          img: "./article/article010.jpg",
+          genre: "Vue",
+          datetime: "2020-10-09",
+          title:
+            "Markdownファイルを１つのvueファイルからURLに応じて動的に読み込む",
+          link: "/article010",
+        },
+        {
+          img: "./article/article009.jpg",
+          genre: "Vue",
+          datetime: "2020-10-06",
+          title: "VueRouterで画面遷移時のスクロール位置制御",
+          link: "/article009",
+        },
+        {
+          img: "./article/article008.jpg",
+          genre: "Vue",
+          datetime: "2020-10-05",
+          title: "vue.config.jsからページタイトルを設定する方法",
+          link: "/article008",
+        },
+        {
+          img: "./article/article007.jpg",
+          genre: "Node",
+          datetime: "2020-10-03",
+          title: "nodebrewでnode.jsのインストール＆バージョン管理",
+          link: "/article007",
+        },
+        {
+          img: "./article/article006.jpg",
+          genre: "Vue",
+          datetime: "2020-09-30",
+          title: "core-jsモジュールエラー",
+          link: "/article006",
+        },
+        {
+          img: "./article/article005.jpg",
+          genre: "Vue",
+          datetime: "2020-09-29",
+          title: "Vuetifyの導入方法",
+          link: "/article005",
+        },
+        {
+          img: "./article/article004.jpg",
+          genre: "Vue",
+          datetime: "2020-09-27",
+          title: "vue.jsとfirebaseで認証機能実装",
+          link: "/article004",
+        },
+        {
+          img: "./article/article003.jpg",
+          genre: "Vue",
+          datetime: "2020-09-27",
+          title: "SPAの「/」以外でリロードすると404エラーになる",
+          link: "/article003",
+        },
+        {
+          img: "./article/article002.jpg",
+          genre: "Vue",
+          datetime: "2020-09-24",
+          title: "リモートリポジトリ内を別のプロジェクトで上書き",
+          link: "/article002",
+        },
+        {
+          img: "./article/article001.jpg",
+          genre: "Vue",
+          datetime: "2020-09-22",
+          title: "vue.jsとnetlifyでブログ作成",
+          link: "/article001",
+        },
+      ],
+    };
+  },
+};
+</script>
 
 <style>
 .card {

@@ -89,7 +89,6 @@ ul.topnav {
 #right {
   float: right;
   width: 28%;
-  right: 0;
   padding-bottom: 75px;
 }
 @media screen and (max-width: 480px) {
@@ -97,7 +96,6 @@ ul.topnav {
     float: none;
     width: 100%;
     right: none;
-    position: relative;
   }
   #left {
     float: none;

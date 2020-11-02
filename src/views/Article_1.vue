@@ -7,211 +7,30 @@
       <router-link class="btn-square" to="/Article_2">2</router-link
       ><br /><br />
 
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article007.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">React</p>
-          <time class="card__time" datetime="2020-11-02">2020.11.02</time>
-        </div>
-        <h2 class="card__ttl">
-          react+webpack+ts-loader+typescript でプロジェクト作成の方法
-        </h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article019"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article006.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">VSCode</p>
-          <time class="card__time" datetime="2020-10-26">2020.10.26</time>
-        </div>
-        <h2 class="card__ttl">
-          VSCode の拡張機能「Prettier」が便利なので導入してみた
-        </h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article018"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article005.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">AWS</p>
-          <time class="card__time" datetime="2020-10-25">2020.10.25</time>
-        </div>
-        <h2 class="card__ttl">
-          Docker環境のReactプロジェクトをAWS ECS Fargateで稼働させてみた
-        </h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article017"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article004.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">vue.js</p>
-          <time class="card__time" datetime="2020-10-25">2020.10.25</time>
-        </div>
-        <h2 class="card__ttl">
-          vue.jsで作成したSPAサイトにgoogleAdsenseとgoogleAnalyticsを導入
-        </h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article016"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article003.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">vue.js</p>
-          <time class="card__time" datetime="2020-10-21">2020.10.21</time>
-        </div>
-        <h2 class="card__ttl">
-          vue.jsをPWA化してオフラインでアクセスできるようにする方法
-        </h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article015"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article002.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">vue.js</p>
-          <time class="card__time" datetime="2020-10-20">2020.10.20</time>
-        </div>
-        <h2 class="card__ttl">vue.jsのSPAサイトで表示速度の改善</h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article014"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article001.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">vue.js</p>
-          <time class="card__time" datetime="2020-10-18">2020.10.18</time>
-        </div>
-        <h2 class="card__ttl">
-          vue routerの動的ルートマッチングで遷移しない問題
-        </h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article013"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article012.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">vue.js</p>
-          <time class="card__time" datetime="2020-10-12">2020.10.12</time>
-        </div>
-        <h2 class="card__ttl">vue.jsでじゃんけんゲームを作ってみた</h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article012"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article011.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">vue.js</p>
-          <time class="card__time" datetime="2020-10-10">2020.10.10</time>
-        </div>
-        <h2 class="card__ttl">
-          vue-markdown-highlightでシンタックスハイライトを実装した
-        </h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article011"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
-
-      <article class="card">
-        <img
-          class="card__img"
-          src="../assets/article/article010.jpg"
-          decoding="async"
-        />
-        <div class="card__meta">
-          <p class="card__cat">vue.js</p>
-          <time class="card__time" datetime="2020-10-09">2020.10.09</time>
-        </div>
-        <h2 class="card__ttl">
-          Markdownファイルを１つのvueファイルからURLに応じて動的に読み込む
-        </h2>
-        <p class="card__desc">
-          <router-link class="btn-square" to="/article010"
-            >Read more</router-link
-          >
-        </p>
-      </article>
-      <br />
+      <li
+        v-for="(item, index) in items"
+        :key="index"
+        style="list-style-type: none"
+      >
+        <article class="card">
+          <img class="card__img" :src="item.img" decoding="async" />
+          <div class="card__meta">
+            <p class="card__cat">{{ item.genre }}</p>
+            <time class="card__time" :datetime="item.datetime">{{
+              item.datetime
+            }}</time>
+          </div>
+          <h2 class="card__ttl">
+            {{ item.title }}
+          </h2>
+          <p class="card__desc">
+            <router-link class="btn-square" :to="item.link"
+              >Read more</router-link
+            >
+          </p>
+        </article>
+        <br />
+      </li>
 
       <br />
       <router-link class="btn-square" to="/Article_1">1</router-link>&nbsp;
@@ -220,6 +39,83 @@
     </div>
   </center>
 </template>
+
+<script>
+export default {
+  name: "Article",
+  data() {
+    return {
+      items: [
+        {
+          img: "./article/article007.jpg",
+          genre: "React",
+          datetime: "2020-11-02",
+          title: "react+webpack+ts-loader+typescript でプロジェクト作成の方法",
+          link: "/article019",
+        },
+        {
+          img: "./article/article006.jpg",
+          genre: "VSCode",
+          datetime: "2020-10-26",
+          title: "VSCode の拡張機能「Prettier」が便利なので導入してみた",
+          link: "/article018",
+        },
+        {
+          img: "./article/article005.jpg",
+          genre: "AWS",
+          datetime: "2020-10-25",
+          title:
+            "Docker環境のReactプロジェクトをAWS ECS Fargateで稼働させてみた",
+          link: "/article017",
+        },
+        {
+          img: "./article/article004.jpg",
+          genre: "Vue",
+          datetime: "2020-10-25",
+          title:
+            "vue.jsで作成したSPAサイトにgoogleAdsenseとgoogleAnalyticsを導入",
+          link: "/article016",
+        },
+        {
+          img: "./article/article003.jpg",
+          genre: "Vue",
+          datetime: "2020-10-21",
+          title: "vue.jsをPWA化してオフラインでアクセスできるようにする方法",
+          link: "/article015",
+        },
+        {
+          img: "./article/article002.jpg",
+          genre: "Vue",
+          datetime: "2020-10-20",
+          title: "vue.jsのSPAサイトで表示速度の改善",
+          link: "/article014",
+        },
+        {
+          img: "./article/article001.jpg",
+          genre: "Vue",
+          datetime: "2020-10-18",
+          title: "vue routerの動的ルートマッチングで遷移しない問題",
+          link: "/article013",
+        },
+        {
+          img: "./article/article012.jpg",
+          genre: "Vue",
+          datetime: "2020-10-12",
+          title: "vue.jsでじゃんけんゲームを作ってみた",
+          link: "/article012",
+        },
+        {
+          img: "./article/article011.jpg",
+          genre: "Vue",
+          datetime: "2020-10-10",
+          title: "vue-markdown-highlightでシンタックスハイライトを実装した",
+          link: "/article011",
+        },
+      ],
+    };
+  },
+};
+</script>
 
 <style>
 .card {
