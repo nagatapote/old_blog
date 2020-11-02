@@ -10,6 +10,27 @@
       <article class="card">
         <img
           class="card__img"
+          src="../assets/article/article007.jpg"
+          decoding="async"
+        />
+        <div class="card__meta">
+          <p class="card__cat">React</p>
+          <time class="card__time" datetime="2020-11-02">2020.11.02</time>
+        </div>
+        <h2 class="card__ttl">
+          react+webpack+ts-loader+typescript でプロジェクト作成の方法
+        </h2>
+        <p class="card__desc">
+          <router-link class="btn-square" to="/article019"
+            >Read more</router-link
+          >
+        </p>
+      </article>
+      <br />
+
+      <article class="card">
+        <img
+          class="card__img"
           src="../assets/article/article006.jpg"
           decoding="async"
         />

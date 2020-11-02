@@ -8,30 +8,30 @@ const routes = [
     path: "/",
     name: "Home",
     component: () => import("../views/Home.vue"),
-    meta: { title: "pote's blog" }
+    meta: { title: "pote's blog" },
   },
   {
     path: "/Article_1",
     name: "Article1",
     component: () => import("../views/Article_1.vue"),
-    meta: { title: "pote's blog | Article" }
+    meta: { title: "pote's blog | Article" },
   },
   {
     path: "/Article_2",
     name: "Article_2",
     component: () => import("../views/Article_2.vue"),
-    meta: { title: "pote's blog | Article" }
+    meta: { title: "pote's blog | Article" },
   },
   {
     path: "/Form",
     name: "Form",
     component: () => import("../components/Form.vue"),
-    meta: { title: "pote's blog | Contact" }
+    meta: { title: "pote's blog | Contact" },
   },
   {
     path: "/:id",
-    component: () => import("../views/Markdown.vue")
-  }
+    component: () => import("../views/Markdown.vue"),
+  },
 ];
 
 const router = new VueRouter({
@@ -44,7 +44,7 @@ const router = new VueRouter({
     } else {
       return { x: 0, y: 0 };
     }
-  }
+  },
 });
 
 router.afterEach((to, from) => {

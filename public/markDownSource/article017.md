@@ -83,7 +83,7 @@ $ cd my-app
 $ touch Dockerfile
 ```
 
-Dockerfile に以下を記載。(Node.js で mongoDB 等を使う場合は、docker-compose.yml ファイルを作成する必要がある認識)
+Dockerfile に以下を記載。
 
 ```
 FROM node:11-alpine as builder
