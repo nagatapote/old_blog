@@ -90,7 +90,6 @@ ul.topnav {
   float: right;
   width: 28%;
   right: 0;
-  position: fixed;
   padding-bottom: 75px;
 }
 @media screen and (max-width: 480px) {
