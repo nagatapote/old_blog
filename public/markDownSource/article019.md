@@ -34,7 +34,7 @@ $ npm i -D webpack webpack-cli webpack-dev-server typescript ts-loader
 
 ・「webpack4」→ 5 はリリースされたばかり&webpack-dev-server でコード上書き時の自動リロードが効かない
 
-・「webpack-cli3」 → 4 だと webpack-dev-server が使えない
+・「webpack-cli3」 → 4 だと npm run serve に webpack-dev-server が使えない
 
 ```
 $ npm install

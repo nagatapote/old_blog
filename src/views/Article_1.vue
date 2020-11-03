@@ -41,6 +41,7 @@
 </template>
 
 <script>
+import "../css/Article.css";
 export default {
   name: "Article",
   data() {
@@ -116,59 +117,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.card {
-  width: 350px;
-  margin: 0 auto;
-  padding: 12px;
-  border: 1px solid #ccc;
-  background: #fff;
-}
-.card__img {
-  width: 100%;
-  height: 200px;
-}
-.card__meta {
-  display: flex;
-  align-items: center;
-}
-.card__cat {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 12px;
-  background: #ffb300;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 14px;
-}
-.card__time {
-  margin: 0 0 0 auto;
-  font-size: 12px;
-  color: #666;
-}
-.card__ttl {
-  font-size: 20px;
-  margin: 0;
-}
-.card__desc {
-  font-size: 16px;
-}
-
-.btn-square {
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  background: #668ad8;
-  color: #fff;
-  border-bottom: solid 4px #627295;
-  border-radius: 3px;
-}
-.btn-square:active {
-  -webkit-transform: translateY(4px);
-  transform: translateY(4px);
-  border-bottom: none;
-}
-</style>
