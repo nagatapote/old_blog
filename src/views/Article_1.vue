@@ -48,10 +48,17 @@ export default {
     return {
       items: [
         {
+          img: "./article/article008.jpg",
+          genre: "React",
+          datetime: "2020-11-11",
+          title: "react+typescriptでcssのimport方法",
+          link: "/article020",
+        },
+        {
           img: "./article/article007.jpg",
           genre: "React",
           datetime: "2020-11-02",
-          title: "react+webpack+ts-loader+typescript でプロジェクト作成の方法",
+          title: "react+webpack+ts-loader+typescriptでプロジェクト作成の方法",
           link: "/article019",
         },
         {
