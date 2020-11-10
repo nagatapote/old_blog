@@ -23,6 +23,12 @@ const routes = [
     meta: { title: "pote's blog | Article" },
   },
   {
+    path: "/Article_3",
+    name: "Article_3",
+    component: () => import("../views/Article_3.vue"),
+    meta: { title: "pote's blog | Article" },
+  },
+  {
     path: "/Form",
     name: "Form",
     component: () => import("../components/Form.vue"),
