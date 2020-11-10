@@ -1,4 +1,4 @@
-# Vue と Netlify で問い合わせフォームを作成する方法
+# Vue と Netlify Forms で問い合わせフォームを作成する方法
 
 ## 前提
 
@@ -14,13 +14,13 @@ node v12.18.4
 
 <a href="https://yuyauver98.me/contactform-coding-capok/" target="_blank">https://yuyauver98.me/contactform-coding-capok/</a>
 
-・Netlify Form の使い方
+・Netlify Forms の使い方
 
 <a href="https://gurutaka-log.com/netlify-nuxt-contact-form" target="_blank">https://gurutaka-log.com/netlify-nuxt-contact-form</a>
 
 ## 目的
 
-Netlify Form を使って、お問い合わせフォームを設置したかった。
+Netlify Forms を使って、お問い合わせフォームを設置したかった。
 
 ## 完成物
 
@@ -39,7 +39,7 @@ index.html の`<body>`内に以下を追記します。
 ```
 
 参考サイトのお問い合わせフォームに以下を追記しています。
-これにより、Netlify Form でお問い合わせを受け取ることができます。
+これにより、Netlify Forms でお問い合わせを受け取ることができます。
 
 ```html
 <form name="contact" method="post" netlify data-netlify="true">
@@ -70,7 +70,7 @@ export default {
 };
 ```
 
-Netlify Form の使い方や通知確認方法は、公式サイトまたは参考サイトをご覧ください。
+Netlify Forms の使い方や通知確認方法は、公式サイトまたは参考サイトをご覧ください。
 
 **完成コード**
 
