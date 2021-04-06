@@ -36,12 +36,6 @@
           </div>
         </div>
         <div class="adr">
-          <Adsense
-            data-ad-client="ca-pub-3401994941764286"
-            data-ad-slot="7553735009"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          ></Adsense>
         </div>
       </div>
     </center>
