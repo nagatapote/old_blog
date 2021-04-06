@@ -8,6 +8,7 @@ header {
   top: 0;
   background-color: #1b2538;
   color: white;
+  z-index: 9999
 }
 footer {
   margin-top: 20px;
